@@ -1,0 +1,164 @@
+(footprint "COILCRAFT_MSS1048"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "eb3985be-26d1-4836-a06d-3b6cc701aa1f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "COILCRAFT_MSS1048"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "8f3e2ec3-df42-4228-8050-d93c24c68c92")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "83d41512-2c87-43e9-94f4-9b532dc430d9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ed7293bf-411d-4165-97ef-ae20f4d80a38")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -5.5 -5.6)
+		(end -5.5 5.6)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "4a36ef78-0993-4f15-9bbb-64fbf5932ae5")
+	)
+	(fp_line
+		(start -5.5 5.6)
+		(end -2.5 5.6)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6d740eb5-1646-43c3-8f08-ac3cf699dbe4")
+	)
+	(fp_line
+		(start -2.5 -5.6)
+		(end -5.5 -5.6)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "c88b57b2-4e18-407b-b43a-2a8b2740db60")
+	)
+	(fp_line
+		(start 2.5 -5.6)
+		(end 5.5 -5.6)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "0dffecec-56e3-4efb-ab34-b040f41bf136")
+	)
+	(fp_line
+		(start 5.5 -5.6)
+		(end 5.5 5.6)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "cf004d43-9bf0-4349-90f0-9e0ef62225e1")
+	)
+	(fp_line
+		(start 5.5 5.6)
+		(end 2.5 5.6)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "4e0436e5-6c9f-48e8-8f2f-794469ff67fa")
+	)
+	(fp_rect
+		(start -5.5 -5.6)
+		(end 5.5 5.6)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "c67b4956-e32b-41b2-afe8-367b57d222bd")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "c99c56d9-f6d6-4adb-a3d4-f37efa4c0571")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 -4.7)
+		(size 3.56 1.78)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "94d10a89-6dcd-42a4-97c7-b12c0b681a05")
+	)
+	(pad "2" smd rect
+		(at 0 4.7)
+		(size 3.56 1.78)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "04ebc15a-a0aa-4813-905b-00ab2834278c")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/Coilcraft-MSS1048.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)
