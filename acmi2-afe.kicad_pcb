@@ -21641,7 +21641,7 @@
 	(footprint "My Footprints:TE_5499922-4"
 		(layer "F.Cu")
 		(uuid "9f8e50c2-1d50-4dcf-806d-13fbe468c723")
-		(at 112.480468 242.555)
+		(at 111.24 241.9)
 		(property "Reference" "J7"
 			(at -8.745 -7.435 0)
 			(layer "F.SilkS")

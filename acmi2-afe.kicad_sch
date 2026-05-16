@@ -353,7 +353,7 @@
 	)
 	(bus
 		(pts
-			(xy 151.13 95.25) (xy 175.26 95.25)
+			(xy 144.78 94.615) (xy 151.13 94.615)
 		)
 		(stroke
 			(width 0)
@@ -390,6 +390,16 @@
 			(type default)
 		)
 		(uuid "49896e51-0fc6-4266-99fb-3f12c8d6a12c")
+	)
+	(bus
+		(pts
+			(xy 151.13 94.615) (xy 151.13 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e98bd58-f43e-4c36-a061-4bd62eb0ffc6")
 	)
 	(wire
 		(pts
@@ -440,6 +450,16 @@
 			(type default)
 		)
 		(uuid "89815285-6e2c-4afd-ae79-1c96a78f0426")
+	)
+	(bus
+		(pts
+			(xy 151.13 95.25) (xy 175.26 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a6fa57e-08e3-4207-88c4-33a1c636aac0")
 	)
 	(wire
 		(pts
@@ -2644,7 +2664,7 @@
 		)
 	)
 	(sheet
-		(at 124.46 81.915)
+		(at 118.11 81.28)
 		(size 26.67 26.67)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2660,7 +2680,7 @@
 		)
 		(uuid "3dc9530c-527f-453b-ba82-db3029630d92")
 		(property "Sheetname" "adc"
-			(at 124.46 81.2034 0)
+			(at 118.11 80.5684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2669,7 +2689,7 @@
 			)
 		)
 		(property "Sheetfile" "adc.kicad_sch"
-			(at 124.46 109.1696 0)
+			(at 118.11 108.5346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2678,7 +2698,7 @@
 			)
 		)
 		(pin "{ADC}" bidirectional
-			(at 151.13 95.25 0)
+			(at 144.78 94.615 0)
 			(uuid "2cdbb091-b84a-4264-8710-5c3a913a21cf")
 			(effects
 				(font
