@@ -12157,24 +12157,6 @@
 			(pin input line
 				(at 10.16 -40.64 0)
 				(length 7.62)
-				(name "AIN+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 10.16 -43.18 0)
-				(length 7.62)
 				(name "AIN-"
 					(effects
 						(font
@@ -12191,16 +12173,34 @@
 				)
 			)
 			(pin input line
-				(at 10.16 -64.77 0)
+				(at 10.16 -43.18 0)
 				(length 7.62)
-				(name "ENC+"
+				(name "AIN+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "14"
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 -64.77 0)
+				(length 7.62)
+				(name "ENC-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -12211,14 +12211,14 @@
 			(pin input line
 				(at 10.16 -67.31 0)
 				(length 7.62)
-				(name "ENC-"
+				(name "ENC+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "15"
+				(number "14"
 					(effects
 						(font
 							(size 1.27 1.27)

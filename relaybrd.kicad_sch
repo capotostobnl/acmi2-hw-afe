@@ -656,7 +656,7 @@
 		)
 	)
 	(bus_alias "relaybrd"
-		(members "faultn" "fault_rdbk" "force_trip" "keylock" "spare[0..4]")
+		(members "faultn" "fault_rdbk" "force_trip" "keylock" "spare[0..4]" "fault_reset")
 	)
 	(junction
 		(at 128.27 100.33)

@@ -373,16 +373,6 @@
 	)
 	(wire
 		(pts
-			(xy 373.38 208.28) (xy 373.38 207.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49027cb9-b2fd-49ae-adeb-14f5b827fdee")
-	)
-	(wire
-		(pts
 			(xy 214.63 87.63) (xy 237.49 87.63)
 		)
 		(stroke
@@ -410,16 +400,6 @@
 			(type default)
 		)
 		(uuid "57546de6-35f1-4e76-9398-f617f4bbfe56")
-	)
-	(wire
-		(pts
-			(xy 387.35 208.28) (xy 387.35 207.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64747ea8-c918-4b2c-a920-1c911609132a")
 	)
 	(wire
 		(pts
@@ -550,100 +530,6 @@
 			(type default)
 		)
 		(uuid "fc4f5439-bb20-4bce-b3b0-b3b77968f118")
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 387.35 207.01 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "09d0cd49-e58a-4867-8220-7ddac23a9cbf")
-		(property "Reference" "TP6"
-			(at 389.89 202.4379 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "${SHORT_NET_NAME(1)}"
-			(at 389.89 204.9779 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "My Footprints:TestPoint_RCS-0C"
-			(at 392.43 207.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 392.43 207.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PC TEST POINT NATURAL"
-			(at 387.35 207.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "TE"
-			(at 387.35 207.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG_PN" "RCS-0C"
-			(at 387.35 207.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Cost" "0.23"
-			(at 387.35 207.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cade57a3-4e33-4f07-b720-192541677d74")
-		)
-		(instances
-			(project "acmi2-afe"
-				(path "/40891cc8-bf64-41f4-8f69-a607d7b280eb"
-					(reference "TP6")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
@@ -1286,74 +1172,6 @@
 	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 373.38 208.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "398dac9f-58fb-4c6f-8786-c2f199dad148")
-		(property "Reference" "#PWR011"
-			(at 373.38 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 373.38 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 373.38 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 373.38 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 373.38 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5125885d-bf94-4ac0-a1ad-cfd3033601e1")
-		)
-		(instances
-			(project "acmi2-afe"
-				(path "/40891cc8-bf64-41f4-8f69-a607d7b280eb"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "GND_1")
-		(lib_id "power:GND")
 		(at 326.39 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1686,100 +1504,6 @@
 			(project "acmi2-afe"
 				(path "/40891cc8-bf64-41f4-8f69-a607d7b280eb"
 					(reference "MT5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 373.38 207.01 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "846379c8-1bce-421c-b882-c59ebc7066d0")
-		(property "Reference" "TP5"
-			(at 375.92 202.4379 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "${SHORT_NET_NAME(1)}"
-			(at 375.92 204.9779 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "My Footprints:TestPoint_RCS-0C"
-			(at 378.46 207.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 378.46 207.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PC TEST POINT NATURAL"
-			(at 373.38 207.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "TE"
-			(at 373.38 207.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG_PN" "RCS-0C"
-			(at 373.38 207.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Cost" "0.23"
-			(at 373.38 207.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "842f43cc-4363-4b41-b9a1-39e97ad23e12")
-		)
-		(instances
-			(project "acmi2-afe"
-				(path "/40891cc8-bf64-41f4-8f69-a607d7b280eb"
-					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -2376,74 +2100,6 @@
 			(project "acmi2-afe"
 				(path "/40891cc8-bf64-41f4-8f69-a607d7b280eb"
 					(reference "MT7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "GND_1")
-		(lib_id "power:GND")
-		(at 387.35 208.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d3e005c2-edf3-400d-aac3-a94be3a63b67")
-		(property "Reference" "#PWR014"
-			(at 387.35 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 387.35 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 387.35 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 387.35 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 387.35 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0b910971-dd1e-4fad-93a1-f24cf2fdeb0f")
-		)
-		(instances
-			(project "acmi2-afe"
-				(path "/40891cc8-bf64-41f4-8f69-a607d7b280eb"
-					(reference "#PWR014")
 					(unit 1)
 				)
 			)

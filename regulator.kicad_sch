@@ -5472,6 +5472,36 @@
 		)
 		(uuid "3d45606b-7606-4a79-9cf6-3c4c8d4e1613")
 	)
+	(label "+3.3v_U5"
+		(at 173.99 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "513ec7a3-f287-420f-886d-235af70faeb5")
+	)
+	(label "+3.3v_U3"
+		(at 44.45 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5fda7628-5f82-48ca-8d00-1a05b2439f60")
+	)
+	(label "+5VIN"
+		(at 57.15 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7f9029ec-200d-40c8-9dac-501b41df9d06")
+	)
 	(hierarchical_label "afe_pwrenb"
 		(shape input)
 		(at 29.21 55.88 180)

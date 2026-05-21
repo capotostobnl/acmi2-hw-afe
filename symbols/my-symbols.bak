@@ -7296,7 +7296,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 4.826 -18.542 0)
+			(at 4.826 -12.192 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7305,7 +7305,7 @@
 			)
 		)
 		(property "Value" "CAT25320VI-GT3"
-			(at -11.176 3.048 0)
+			(at -0.254 14.224 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7373,8 +7373,8 @@
 		)
 		(symbol "CAT25320VI-GT3_0_0"
 			(rectangle
-				(start -12.7 12.7)
-				(end 6.35 -15.24)
+				(start -11.43 12.7)
+				(end 6.35 -8.89)
 				(stroke
 					(width 0.4064)
 					(type default)
@@ -7384,7 +7384,7 @@
 				)
 			)
 			(pin input line
-				(at -17.78 0 0)
+				(at -16.51 7.62 0)
 				(length 5.08)
 				(name "~CS"
 					(effects
@@ -7402,7 +7402,7 @@
 				)
 			)
 			(pin input line
-				(at -17.78 -2.54 0)
+				(at -16.51 5.08 0)
 				(length 5.08)
 				(name "SCK"
 					(effects
@@ -7420,7 +7420,7 @@
 				)
 			)
 			(pin input line
-				(at -17.78 -5.08 0)
+				(at -16.51 2.54 0)
 				(length 5.08)
 				(name "SI"
 					(effects
@@ -7438,7 +7438,7 @@
 				)
 			)
 			(pin input line
-				(at -17.78 -7.62 0)
+				(at -16.51 0 0)
 				(length 5.08)
 				(name "~HOLD"
 					(effects
@@ -7456,7 +7456,7 @@
 				)
 			)
 			(pin input line
-				(at -17.78 -12.7 0)
+				(at -16.51 -5.08 0)
 				(length 5.08)
 				(name "~WP"
 					(effects
@@ -7492,7 +7492,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 -20.32 90)
+				(at -2.54 -13.97 90)
 				(length 5.08)
 				(name "VSS"
 					(effects
@@ -12157,14 +12157,14 @@
 			(pin input line
 				(at 10.16 -40.64 0)
 				(length 7.62)
-				(name "AIN+"
+				(name "AIN-"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "8"
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -12175,14 +12175,14 @@
 			(pin input line
 				(at 10.16 -43.18 0)
 				(length 7.62)
-				(name "AIN-"
+				(name "AIN+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "9"
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)

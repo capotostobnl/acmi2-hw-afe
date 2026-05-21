@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 1.6,
-          "width": 3.55
+          "drill": 0.3,
+          "height": 0.5,
+          "width": 0.5
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -129,7 +129,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.15,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
@@ -142,7 +142,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
+        "min_track_width": 0.1524,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
@@ -196,6 +196,7 @@
         0.0,
         0.11,
         0.15,
+        0.17,
         0.2,
         0.3,
         1.016,
@@ -488,7 +489,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.12,
+        "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -506,9 +507,23 @@
       },
       {
         "clearance": 0.2,
-        "name": "PWR",
+        "diff_pair_gap": 0.15,
+        "diff_pair_width": 0.17,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "DP_100R",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3
+      },
+      {
+        "clearance": 0.2,
+        "name": "PWR",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 1.0,
         "via_diameter": 0.6,
@@ -519,7 +534,71 @@
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "/adc/ADC_CLK_N": [
+        "DP_100R"
+      ],
+      "/adc/ADC_CLK_P": [
+        "DP_100R"
+      ],
+      "/adc/CLKOUT_N": [
+        "DP_100R"
+      ],
+      "/adc/CLKOUT_P": [
+        "DP_100R"
+      ],
+      "/adc/D0_N": [
+        "DP_100R"
+      ],
+      "/adc/D0_P": [
+        "DP_100R"
+      ],
+      "/adc/D10_N": [
+        "DP_100R"
+      ],
+      "/adc/D10_P": [
+        "DP_100R"
+      ],
+      "/adc/D12_N": [
+        "DP_100R"
+      ],
+      "/adc/D12_P": [
+        "DP_100R"
+      ],
+      "/adc/D14_N": [
+        "DP_100R"
+      ],
+      "/adc/D14_P": [
+        "DP_100R"
+      ],
+      "/adc/D2_N": [
+        "DP_100R"
+      ],
+      "/adc/D2_P": [
+        "DP_100R"
+      ],
+      "/adc/D4_N": [
+        "DP_100R"
+      ],
+      "/adc/D4_P": [
+        "DP_100R"
+      ],
+      "/adc/D6_P": [
+        "DP_100R"
+      ],
+      "/adc/D8_N": [
+        "DP_100R"
+      ],
+      "/adc/D8_P": [
+        "DP_100R"
+      ],
+      "/adc/OF_N": [
+        "DP_100R"
+      ],
+      "/adc/OF_P": [
+        "DP_100R"
+      ]
+    },
     "netclass_patterns": [
       {
         "netclass": "Default",
