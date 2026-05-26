@@ -351,16 +351,6 @@
 		)
 		(uuid "193ee416-4524-41c7-bee9-c758d0f2b94e")
 	)
-	(bus
-		(pts
-			(xy 144.78 94.615) (xy 151.13 94.615)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b1a5576-f8ad-4cb8-a168-4d43b87faf37")
-	)
 	(wire
 		(pts
 			(xy 346.71 187.96) (xy 346.71 186.69)
@@ -380,16 +370,6 @@
 			(type default)
 		)
 		(uuid "49896e51-0fc6-4266-99fb-3f12c8d6a12c")
-	)
-	(bus
-		(pts
-			(xy 151.13 94.615) (xy 151.13 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e98bd58-f43e-4c36-a061-4bd62eb0ffc6")
 	)
 	(wire
 		(pts
@@ -480,6 +460,16 @@
 			(type default)
 		)
 		(uuid "b7241058-690b-4058-a6bf-f7ec82d6f548")
+	)
+	(wire
+		(pts
+			(xy 214.63 165.1) (xy 237.49 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c27485c4-a388-45ea-a54c-71e2748bd11a")
 	)
 	(wire
 		(pts
@@ -2320,7 +2310,7 @@
 		)
 	)
 	(sheet
-		(at 118.11 81.28)
+		(at 124.46 81.915)
 		(size 26.67 26.67)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2336,7 +2326,7 @@
 		)
 		(uuid "3dc9530c-527f-453b-ba82-db3029630d92")
 		(property "Sheetname" "adc"
-			(at 118.11 80.5684 0)
+			(at 124.46 81.2034 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2345,7 +2335,7 @@
 			)
 		)
 		(property "Sheetfile" "adc.kicad_sch"
-			(at 118.11 108.5346 0)
+			(at 124.46 109.1696 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2354,7 +2344,7 @@
 			)
 		)
 		(pin "{ADC}" bidirectional
-			(at 144.78 94.615 0)
+			(at 151.13 95.25 0)
 			(uuid "2cdbb091-b84a-4264-8710-5c3a913a21cf")
 			(effects
 				(font
@@ -2537,6 +2527,16 @@
 				(justify left)
 			)
 		)
+		(pin "wdi" output
+			(at 214.63 165.1 0)
+			(uuid "cd9ea620-e82e-4bae-9dd3-554e0100a27f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "acmi2-afe"
 				(path "/40891cc8-bf64-41f4-8f69-a607d7b280eb"
@@ -2634,6 +2634,16 @@
 		(pin "{relaybrd}" output
 			(at 237.49 161.29 180)
 			(uuid "3d10e7cb-2aea-4ea3-8273-aec23e1d5b4d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "wdi" input
+			(at 237.49 165.1 180)
+			(uuid "b3b94fa5-b056-4331-9350-7fea2e7f820e")
 			(effects
 				(font
 					(size 1.27 1.27)

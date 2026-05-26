@@ -2483,6 +2483,16 @@
 	)
 	(wire
 		(pts
+			(xy 311.15 135.89) (xy 337.82 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18bd16e1-f329-4550-9c69-ff95cfebac56")
+	)
+	(wire
+		(pts
 			(xy 368.3 130.81) (xy 368.3 125.73)
 		)
 		(stroke
@@ -5555,6 +5565,17 @@
 			(justify right)
 		)
 		(uuid "39b0c7ca-d0a6-4085-87f8-e4d8315dc652")
+	)
+	(hierarchical_label "wdi"
+		(shape output)
+		(at 311.15 135.89 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "53d7f667-1ba4-4d46-81c2-07de82c5ce0c")
 	)
 	(hierarchical_label "{eeprom}"
 		(shape input)

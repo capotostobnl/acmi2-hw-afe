@@ -1,4 +1,4 @@
-26783461079251110
+26785242028147872
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -72609,14 +72609,14 @@ QFN50P350X350X100-21N
 
 0
 25
-25
+21
 My Footprints
 RDM0023A-MFG
 
 TPSM82866AA0HRDMR 
 0
 27
-27
+23
 My Footprints
 RDM0023A-SMD-MFG
 
@@ -72658,7 +72658,7 @@ SON50P200X200X80-9N
 
 0
 11
-11
+9
 My Footprints
 SOP50P810X120-48N
 
@@ -72680,6 +72680,13 @@ TE_6469028-1
 0
 60
 60
+My Footprints
+TPS3850_DRCR
+
+
+0
+15
+11
 My Footprints
 TestPoint_RCS-0C
 Keystone SMT Micro Mini Test Point 5015, http://www.keyelco.com/product-pdf.cfm?p=1353
