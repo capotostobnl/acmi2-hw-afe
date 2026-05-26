@@ -16029,17 +16029,6 @@
 			)
 		)
 		(symbol "TPS3850H50DRCR_0_0"
-			(rectangle
-				(start -12.7 25.4)
-				(end 12.7 -17.78)
-				(stroke
-					(width 0.41)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
 			(pin bidirectional line
 				(at -17.78 17.78 0)
 				(length 5.08)
@@ -16168,6 +16157,17 @@
 			)
 		)
 		(symbol "TPS3850H50DRCR_1_0"
+			(rectangle
+				(start -12.7 25.4)
+				(end 12.7 -17.78)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
 			(pin input edge_clock_high
 				(at -17.78 -1.27 0)
 				(length 5.08)
