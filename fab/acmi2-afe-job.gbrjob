@@ -1,0 +1,228 @@
+{
+  "Header": {
+    "GenerationSoftware": {
+      "Vendor": "KiCad",
+      "Application": "Pcbnew",
+      "Version": "9.0.9-9.0.9~ubuntu22.04.1"
+    },
+    "CreationDate": "2026-05-26T13:00:12-04:00"
+  },
+  "GeneralSpecs": {
+    "ProjectId": {
+      "Name": "acmi2-afe",
+      "GUID": "61636d69-322d-4616-9665-2e6b69636164",
+      "Revision": "rev?"
+    },
+    "Size": {
+      "X": 241.35,
+      "Y": 76.25
+    },
+    "LayerNumber": 6,
+    "BoardThickness": 1.546,
+    "Finish": "ENIG",
+    "ImpedanceControlled": true
+  },
+  "DesignRules": [
+    {
+      "Layers": "Outer",
+      "PadToPad": 0.2,
+      "PadToTrack": 0.2,
+      "TrackToTrack": 0.2,
+      "MinLineWidth": 0.1524,
+      "TrackToRegion": 0.2,
+      "RegionToRegion": 0.2
+    },
+    {
+      "Layers": "Inner",
+      "PadToPad": 0.2,
+      "PadToTrack": 0.2,
+      "TrackToTrack": 0.2,
+      "MinLineWidth": 0.17,
+      "TrackToRegion": 0.2,
+      "RegionToRegion": 0.2
+    }
+  ],
+  "FilesAttributes": [
+    {
+      "Path": "acmi2-afe-F_Cu - L1 Signal.gbr",
+      "FileFunction": "Copper,L1,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "acmi2-afe-In1_Cu - L2 GND.gbr",
+      "FileFunction": "Copper,L2,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "acmi2-afe-In2_Cu - L3 Pwr.gbr",
+      "FileFunction": "Copper,L3,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "acmi2-afe-In3_Cu - L4 Signal.gbr",
+      "FileFunction": "Copper,L4,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "acmi2-afe-In4_Cu - L5 GND.gbr",
+      "FileFunction": "Copper,L5,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "acmi2-afe-B_Cu - L6 Signal.gbr",
+      "FileFunction": "Copper,L6,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "acmi2-afe-F_Paste.gbr",
+      "FileFunction": "SolderPaste,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "acmi2-afe-B_Paste.gbr",
+      "FileFunction": "SolderPaste,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "acmi2-afe-F_Silkscreen.gbr",
+      "FileFunction": "Legend,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "acmi2-afe-B_Silkscreen.gbr",
+      "FileFunction": "Legend,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "acmi2-afe-F_Mask.gbr",
+      "FileFunction": "SolderMask,Top",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "acmi2-afe-B_Mask.gbr",
+      "FileFunction": "SolderMask,Bot",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "acmi2-afe-User_Drawings.gbr",
+      "FileFunction": "Other,User",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "acmi2-afe-Edge_Cuts.gbr",
+      "FileFunction": "Profile",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "acmi2-afe-F_Fab.gbr",
+      "FileFunction": "AssemblyDrawing,Top",
+      "FilePolarity": "Positive"
+    }
+  ],
+  "MaterialStackup": [
+    {
+      "Type": "Legend",
+      "Name": "Top Silk Screen"
+    },
+    {
+      "Type": "SolderPaste",
+      "Name": "Top Solder Paste"
+    },
+    {
+      "Type": "SolderMask",
+      "Color": "Green",
+      "Thickness": 0.01,
+      "Name": "Top Solder Mask"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "F.Cu - L1 Signal"
+    },
+    {
+      "Type": "Dielectric",
+      "Color": "R109G116B75",
+      "Thickness": 0.13,
+      "Material": "2116",
+      "DielectricConstant": "4.45",
+      "Name": "F.Cu - L1 Signal/In1.Cu - L2 GND",
+      "Notes": "Type: dielectric layer 1 (from F.Cu - L1 Signal to In1.Cu - L2 GND)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "In1.Cu - L2 GND"
+    },
+    {
+      "Type": "Dielectric",
+      "Color": "R109G116B75",
+      "Thickness": 0.43,
+      "Material": "DK",
+      "DielectricConstant": "4.6",
+      "Name": "In1.Cu - L2 GND/In2.Cu - L3 Pwr",
+      "Notes": "Type: dielectric layer 2 (from In1.Cu - L2 GND to In2.Cu - L3 Pwr)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "In2.Cu - L3 Pwr"
+    },
+    {
+      "Type": "Dielectric",
+      "Color": "R109G116B75",
+      "Thickness": 0.196,
+      "Material": "7628",
+      "DielectricConstant": "4.74",
+      "Name": "In2.Cu - L3 Pwr/In3.Cu - L4 Signal",
+      "Notes": "Type: dielectric layer 3 (from In2.Cu - L3 Pwr to In3.Cu - L4 Signal)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "In3.Cu - L4 Signal"
+    },
+    {
+      "Type": "Dielectric",
+      "Color": "R109G116B75",
+      "Thickness": 0.43,
+      "Material": "DK",
+      "DielectricConstant": "4.6",
+      "Name": "In3.Cu - L4 Signal/In4.Cu - L5 GND",
+      "Notes": "Type: dielectric layer 4 (from In3.Cu - L4 Signal to In4.Cu - L5 GND)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "In4.Cu - L5 GND"
+    },
+    {
+      "Type": "Dielectric",
+      "Color": "R109G116B75",
+      "Thickness": 0.13,
+      "Material": "2116",
+      "DielectricConstant": "4.5",
+      "LossTangent": "0.02",
+      "Name": "In4.Cu - L5 GND/B.Cu - L6 Signal",
+      "Notes": "Type: dielectric layer 5 (from In4.Cu - L5 GND to B.Cu - L6 Signal)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "B.Cu - L6 Signal"
+    },
+    {
+      "Type": "SolderMask",
+      "Color": "Green",
+      "Thickness": 0.01,
+      "Name": "Bottom Solder Mask"
+    },
+    {
+      "Type": "SolderPaste",
+      "Name": "Bottom Solder Paste"
+    },
+    {
+      "Type": "Legend",
+      "Name": "Bottom Silk Screen"
+    }
+  ]
+}
