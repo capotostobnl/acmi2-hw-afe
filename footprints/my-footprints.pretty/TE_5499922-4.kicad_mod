@@ -17,6 +17,7 @@
 	(property "Value" "TE_5499922-4"
 		(at -4.3 4.595 0)
 		(layer "F.Fab")
+		(hide yes)
 		(uuid "f8d9fa1c-6bf4-4b5c-9120-efb8da6e80a1")
 		(effects
 			(font
