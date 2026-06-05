@@ -17,6 +17,7 @@
 	(property "Value" "MOLEX_39301022"
 		(at 6.19 -10.424 0)
 		(layer "F.Fab")
+		(hide yes)
 		(uuid "c7a0654e-f560-48bf-897a-b0d0b3f7efdf")
 		(effects
 			(font
@@ -297,28 +298,6 @@
 		)
 		(layer "F.Fab")
 		(uuid "906ede2d-b539-4142-86b8-c195adb0bec9")
-	)
-	(fp_text user "PTH D1.80 +/- 0.05"
-		(at -2.7 -8.688 0)
-		(layer "F.Fab")
-		(uuid "40656e06-489a-4aaf-bd9b-6b56fb588d20")
-		(effects
-			(font
-				(size 0.393701 0.393701)
-				(thickness 0.15)
-			)
-		)
-	)
-	(fp_text user "NPTH D3.00 +/- 0.05"
-		(at -2.7 -7.804 0)
-		(layer "F.Fab")
-		(uuid "a037ad99-9e65-45fc-89ea-5eae1696c034")
-		(effects
-			(font
-				(size 0.393701 0.393701)
-				(thickness 0.15)
-			)
-		)
 	)
 	(pad "" np_thru_hole circle
 		(at 0 7.3)

@@ -317,7 +317,7 @@
 		(pos 36 37)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1.25 1.25) bold)
 		(justify center)
 	)
@@ -392,7 +392,7 @@
 		(pos -1.7 36.9)
 		(rotate 90)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1.5 1.5) bold)
 		(justify center top)
 	)
@@ -401,7 +401,7 @@
 		(pos -1.2 59.4)
 		(rotate 90)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 2 2)
 		)
 		(justify center top)
@@ -411,7 +411,7 @@
 		(pos -2.2 79.4)
 		(rotate 90)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1.25 1.25)
 		)
 		(justify top)
@@ -421,7 +421,7 @@
 		(pos -2.2 101.9)
 		(rotate 90)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 0.85 0.85)
 		)
 		(justify center)
@@ -431,7 +431,7 @@
 		(pos -2.2 97.4)
 		(rotate 90)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1.5 1.5)
 		)
 	)
@@ -440,15 +440,15 @@
 		(pos 67.8 29.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 	)
 	(tbtext "${TITLE}"
 		(name "")
-		(pos 36 23.9)
+		(pos 36 27.4002)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 2 2)
 		)
 		(justify center)
@@ -457,65 +457,56 @@
 		(name "")
 		(pos 68.3 13.4)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 	)
 	(tbtext "REV."
 		(name "")
 		(pos 7.8 13.4)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 	)
 	(tbtext "DRAWING NUMBER:"
 		(name "")
 		(pos 61.8 13.4)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 	)
 	(tbtext "Q.A.\nCATEGORY"
 		(name "")
 		(pos 69.3 3.9)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 	)
 	(tbtext "SCALE:"
 		(name "")
 		(pos 52.8 3.4)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 	)
 	(tbtext "WEIGHT:"
 		(name "")
 		(pos 37.3 3.4)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 	)
 	(tbtext "SHEET ${#} OF ${##}"
 		(name "")
 		(pos 21.8 3.4)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 	)
 	(tbtext "${REVISION}"
 		(name "")
 		(pos 6.3 9.5)
 		(font
-			(face "SansSerif")
-			(size 2 2)
-		)
-		(justify center)
-	)
-	(tbtext "${COMMENT1}"
-		(name "")
-		(pos 36 9.5)
-		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 2 2)
 		)
 		(justify center)
@@ -524,7 +515,7 @@
 		(name "")
 		(pos 66.3 9.5)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 2 2)
 		)
 		(justify center)
@@ -533,7 +524,7 @@
 		(name "")
 		(pos 56.3 4)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1.25 1.25)
 		)
 		(justify center)
@@ -542,7 +533,7 @@
 		(name "")
 		(pos 42.8 4)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1.25 1.25)
 		)
 		(justify center)
@@ -551,7 +542,7 @@
 		(name "")
 		(pos 26.8 4)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1.25 1.25)
 		)
 		(justify center)
@@ -560,7 +551,7 @@
 		(name "")
 		(pos -0.2 -1.6)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1.25 1.25) bold)
 		(justify right)
 	)
@@ -569,7 +560,7 @@
 		(pos 97.8 30.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -578,7 +569,7 @@
 		(pos 97.8 27.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -587,7 +578,7 @@
 		(pos 97.8 24.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -596,7 +587,7 @@
 		(pos 97.8 21.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -605,7 +596,7 @@
 		(pos 97.8 18.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -614,7 +605,7 @@
 		(pos 97.8 15.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -623,7 +614,7 @@
 		(pos 97.8 12.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -632,7 +623,7 @@
 		(pos 97.8 9.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -641,7 +632,7 @@
 		(pos 97.8 6.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 0.9 1) bold)
 		(justify center)
 	)
@@ -650,7 +641,7 @@
 		(pos 97.8 3.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 0.8 1) bold)
 		(justify center)
 	)
@@ -659,7 +650,7 @@
 		(pos 120.3 4.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1.25 1.25) bold)
 		(justify center)
 	)
@@ -668,7 +659,7 @@
 		(pos 85.8 30.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -677,7 +668,7 @@
 		(pos 85.8 27.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -686,7 +677,7 @@
 		(pos 85.8 24.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -695,7 +686,7 @@
 		(pos 85.8 21.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -704,7 +695,7 @@
 		(pos 85.8 18.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -713,7 +704,7 @@
 		(pos 85.8 15.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -722,7 +713,7 @@
 		(pos 85.8 12.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -731,7 +722,7 @@
 		(pos 85.8 9.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -740,7 +731,7 @@
 		(pos 85.8 6.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -749,7 +740,7 @@
 		(pos 85.8 3.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -758,7 +749,7 @@
 		(pos 73.8 30.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 0.75 0.75) bold)
 		(justify center)
 	)
@@ -767,7 +758,7 @@
 		(pos 73.8 27.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 0.75 0.75) bold)
 		(justify center)
 	)
@@ -776,7 +767,7 @@
 		(pos 73.8 24.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 0.75 0.75) bold)
 		(justify center)
 	)
@@ -785,7 +776,7 @@
 		(pos 73.8 21.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 0.75 0.75) bold)
 		(justify center)
 	)
@@ -794,7 +785,7 @@
 		(pos 73.8 18.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 0.75 0.75) bold)
 		(justify center)
 	)
@@ -803,7 +794,7 @@
 		(pos 73.8 15.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 0.75 0.75) bold)
 		(justify center)
 	)
@@ -812,7 +803,7 @@
 		(pos 73.8 12.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 0.75 0.75) bold)
 		(justify center)
 	)
@@ -821,7 +812,7 @@
 		(pos 73.8 9.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 0.75 0.75) bold)
 		(justify center)
 	)
@@ -830,7 +821,7 @@
 		(pos 73.8 6.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 0.75 0.75) bold)
 		(justify center)
 	)
@@ -839,7 +830,7 @@
 		(pos 73.8 3.4)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 0.75 0.75) bold)
 		(justify center)
 	)
@@ -848,7 +839,7 @@
 		(pos 119.3 19.4002)
 		(option notonpage1)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 2 2)
 		)
 	)
@@ -857,7 +848,7 @@
 		(pos 85.8 7.4 rtcorner)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -866,7 +857,7 @@
 		(pos 77.8 7.4 rtcorner)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -875,7 +866,7 @@
 		(pos 59.8 7.4 rtcorner)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -884,7 +875,7 @@
 		(pos 41.8 7.4 rtcorner)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -893,7 +884,7 @@
 		(pos 33.3 7.4 rtcorner)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -902,7 +893,7 @@
 		(pos 26.3 7.4 rtcorner)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -911,7 +902,7 @@
 		(pos 19.3 7.4 rtcorner)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -920,7 +911,7 @@
 		(pos 12.3 7.4 rtcorner)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -929,7 +920,7 @@
 		(pos 5.3 7.4 rtcorner)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1) bold)
 		(justify center)
 	)
@@ -938,17 +929,17 @@
 		(pos 59.8 10.9 rtcorner)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1)
 		)
 		(justify center)
 	)
-	(tbtext "A"
+	(tbtext "1"
 		(name "")
 		(pos 85.8 10.9 rtcorner)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1)
 		)
 		(justify center)
@@ -958,7 +949,7 @@
 		(pos 77.8 10.9 rtcorner)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1)
 		)
 		(justify center)
@@ -968,7 +959,7 @@
 		(pos 45.8 3.9 rtcorner)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1.5 1.5) bold)
 		(justify center)
 	)
@@ -977,7 +968,7 @@
 		(pos 33.3 11 rtcorner)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1)
 		)
 		(justify center)
@@ -987,7 +978,7 @@
 		(pos 26.3 11 rtcorner)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1)
 		)
 		(justify center)
@@ -997,7 +988,7 @@
 		(pos 19.3 11 rtcorner)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1)
 		)
 		(justify center)
@@ -1007,7 +998,7 @@
 		(pos 12.3 11 rtcorner)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1)
 		)
 		(justify center)
@@ -1017,7 +1008,7 @@
 		(pos 5.3 11 rtcorner)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1)
 		)
 		(justify center)
@@ -1027,7 +1018,7 @@
 		(pos 41.8 11 rtcorner)
 		(option page1only)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1 1)
 		)
 		(justify center)
@@ -1053,7 +1044,7 @@
 		(pos 101.989 6.5022)
 		(option notonpage1)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 1.25 1.25) bold)
 		(justify center)
 	)
@@ -1062,8 +1053,46 @@
 		(pos 101.989 11.002)
 		(option notonpage1)
 		(font
-			(face "SansSerif")
+			(face "KiCad Font")
 			(size 2 2) bold)
 		(justify center)
+	)
+	(tbtext "${TITLE_LINE2}"
+		(name "")
+		(pos 35.989 22.502)
+		(option page1only)
+		(font
+			(face "KiCad Font")
+			(size 2 2)
+		)
+		(justify center)
+	)
+	(tbtext "${TITLE_LINE3}"
+		(name "")
+		(pos 35.989 17.002)
+		(option page1only)
+		(font
+			(face "KiCad Font")
+			(size 2 2)
+		)
+		(justify center)
+	)
+	(tbtext "${TITLE}"
+		(name "")
+		(pos 36 27.4002)
+		(option page1only)
+		(font
+			(face "KiCad Font")
+			(size 2 2)
+		)
+		(justify center)
+	)
+	(tbtext "${DRAWING_NUMBER}"
+		(name "")
+		(pos 62.489 9.5)
+		(font
+			(face "KiCad Font")
+			(size 2 2)
+		)
 	)
 )
