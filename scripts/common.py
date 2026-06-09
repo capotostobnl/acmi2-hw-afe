@@ -1,10 +1,7 @@
 from dataclasses import dataclass
 from pathlib import Path
-import shutil
-import zipfile
 import json
 
-from pathlib import Path
 
 @dataclass(frozen=True)
 class KiCadVariables:
@@ -12,6 +9,7 @@ class KiCadVariables:
     assy_suffix: str
     fab_suffix: str
     schema_suffix: str
+
 
 @dataclass(frozen=True)
 class KiCadProjectContext:
