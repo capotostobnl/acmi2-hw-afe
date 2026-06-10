@@ -11,7 +11,7 @@ from common import load_context, KICAD_CLI, KiCadProjectContext
 
 
 def build_fab(ctx: KiCadProjectContext) -> None:
-    pass
+    build_fab_gerbers(ctx)
 
 
 def cleanup_temp_dir(ctx: KiCadProjectContext) -> None:
@@ -117,62 +117,61 @@ def build_ipc_d356(ctx: KiCadProjectContext) -> None:
     print("------------------------------------------------------------------")
 
 
+def build_fab_gerbers(ctx: KiCadProjectContext) -> None:
+    """Build Fab Gerbers"""
+    build_drill_dwg_layer_gerbers(ctx)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-def build_fab_pdf(ctx: KiCadProjectContext) -> None:
-    """
-    Generates fabrication PDF package using KiCad CLI.
-
-    Output name is driven by KiCad project variables:
-    drawing_number_prefix + fab_suffix
-    """
-
+def build_drill_dwg_layer_gerbers(ctx: KiCadProjectContext) -> None:
+    """Build Fab Gerbers"""
     prefix = ctx.variables.drawing_number_prefix
     suffix = ctx.variables.fab_suffix
+    revision_num = ctx.variables.revision_num
 
-    filename = f"{prefix}{suffix}.pdf"
-    output_path = ctx.fab_output_dir / filename
+    filename = f"{prefix}-{suffix}_Rev-{revision_num}.gbr"
+    final_output_file = ctx.fab_output_dir / filename
 
-    ctx.fab_output_dir.mkdir(parents=True, exist_ok=True)
+    output_path_temp = ctx.fab_output_dir_temp
+    generated_file = output_path_temp / f"{ctx.pcb_file.stem}-Drill_Drawing.gbr"
 
     cmd = [
         str(KICAD_CLI),
         "pcb",
         "export",
-        "pdf",
+        "gerbers",
         "--output",
-        str(output_path),
-        "--theme",
-        "NSLS-II",
+        str(output_path_temp),
         "--drawing-sheet",
         str(ctx.fab_titleblock),
-        "--include-border-title",
         "--layers",
-        "F.Fab,Edge.Cuts",
+        "Drill.Drawing",
+        "--include-border-title",
+        "--subtract-soldermask",
+        "--common-layers",
+        "Edge.Cuts",
         str(ctx.pcb_file),
     ]
-
-    print("Running:", " ".join(cmd))
-
+    print("------------------------------------------------------------------")
+    print("Creating Drill Drawing Files")
+    print(f"Running: {cmd}")
     subprocess.run(cmd, check=True)
 
-    print("Generated fab package:", output_path)
+    print("Generated DRILL_DRAWING_FILE output:", str(output_path_temp))
+    print("Moving file....")
+    if not generated_file.is_file():
+        raise FileNotFoundError(
+            f"Expected drill file was not generated: {generated_file}"
+        )
+
+    shutil.move(generated_file, final_output_file)
+
+    print(f"Move done, moved to: {final_output_file}")
+    print("------------------------------------------------------------------")
 
 
 if __name__ == "__main__":
     local_ctx = load_context()
-    build_drill(local_ctx)
-    build_ipc_d356(local_ctx)
-    atexit.register(cleanup_temp_dir, local_ctx)
+    # build_drill(local_ctx)
+    # build_ipc_d356(local_ctx)
+    # atexit.register(cleanup_temp_dir, local_ctx)
+    build_drill_dwg_layer_gerbers(local_ctx)
