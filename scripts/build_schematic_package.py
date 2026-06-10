@@ -1,8 +1,13 @@
+"""
+build_schematic_package.py
+Schematic plotting script for plotting schematics from KiCAD. Tested on KiCAD Ver 9, Windows.
+"""
+
 import subprocess
-from common import load_context
+from common import load_context, KICAD_CLI, KiCadProjectContext
 
 
-def build_schematic(ctx, sch_out_dir):
+def build_schematic(ctx: KiCadProjectContext) -> None:
     """
     Generates schematic PDF package using KiCad CLI.
     Output name is driven by KiCad project variables:
@@ -10,24 +15,19 @@ def build_schematic(ctx, sch_out_dir):
     """
 
     # ---- Extract naming variables ----
-    prefix = ctx.variables["DRAWING_NUMBER-PREFIX"]
-    suffix = ctx.variables["DRAWING-SCHEMA_SUFFIX"]
+    prefix = ctx.variables.drawing_number_prefix
+    suffix = ctx.variables.schema_suffix
+    revision_num = ctx.variables.revision_num
 
-    filename = f"{prefix}{suffix}.pdf"
+    filename = f"{prefix}-{suffix}_Rev-{revision_num}.pdf"
 
-    output_path = sch_out_dir / filename
+    ctx.schematic_output_dir.mkdir(parents=True, exist_ok=True)
+    output_path = ctx.schematic_output_dir / filename
 
-    # ---- Schematic file ----
-    schematic_file = ctx.project_root / (ctx.project_file.stem + ".kicad_sch")
 
-    # ---- Drawing sheet ----
-    drawing_sheet = ctx.project_root / \
-        "KiCAD_NSLS_PLDF_Schematic.kicad_wks"
-    print(drawing_sheet)
-    print(drawing_sheet.exists())
     # ---- KiCad CLI export ----
     cmd = [
-        "kicad-cli",
+        str(KICAD_CLI),
         "sch",
         "export",
         "pdf",
@@ -36,8 +36,8 @@ def build_schematic(ctx, sch_out_dir):
         "--theme",
         "NSLS-II",
         "--drawing-sheet",
-        str(drawing_sheet),
-        str(schematic_file)
+        str(ctx.schematic_titleblock),
+        str(ctx.schematic_file)
     ]
 
     print("Running:", " ".join(cmd))
@@ -48,5 +48,5 @@ def build_schematic(ctx, sch_out_dir):
 
 
 if __name__ == "__main__":
-    ctx = load_context()
-    build_schematic(ctx)
+    local_ctx = load_context()
+    build_schematic(local_ctx)
