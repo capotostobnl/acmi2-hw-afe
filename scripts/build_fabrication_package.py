@@ -1,6 +1,7 @@
 """
 build_fabrication_package.py
-Fab Drawing + Gerbers plotting script for plotting schematics from KiCAD. Tested on KiCAD Ver 9, Windows.
+Fab Drawing + Gerbers plotting script for plotting schematics from KiCAD.
+Tested on KiCAD Ver 9, Windows.
 """
 from pathlib import Path
 import atexit
@@ -8,14 +9,17 @@ import subprocess
 import shutil
 from common import load_context, KICAD_CLI, KiCadProjectContext
 
+
 def build_fab(ctx: KiCadProjectContext) -> None:
     pass
+
 
 def cleanup_temp_dir(ctx: KiCadProjectContext) -> None:
     """Delete the TEMP Directory"""
     if ctx.fab_output_dir_temp.exists():
         shutil.rmtree(ctx.fab_output_dir_temp)
         print("Deleted temp folder:", ctx.fab_output_dir_temp)
+
 
 def build_drill(ctx: KiCadProjectContext) -> None:
     """Build Drill file Excellon format"""
@@ -50,7 +54,7 @@ def build_drill(ctx: KiCadProjectContext) -> None:
         "6",
         str(ctx.pcb_file),
     ]
-    print("---------------------------------------------------------------------------------------")
+    print("------------------------------------------------------------------")
     print("Creating Excellon Drill Files")
     print(f"Running: {cmd}")
 
@@ -67,7 +71,8 @@ def build_drill(ctx: KiCadProjectContext) -> None:
     shutil.move(generated_drl_file, final_output_file)
 
     print(f"Move done, moved to: {final_output_file}")
-    print("---------------------------------------------------------------------------------------")
+    print("------------------------------------------------------------------")
+
 
 def build_ipc_d356(ctx: KiCadProjectContext) -> None:
     """Build IPC-D-356 Netlist file"""
@@ -89,7 +94,7 @@ def build_ipc_d356(ctx: KiCadProjectContext) -> None:
         str(filename_d356),
         str(ctx.pcb_file),
     ]
-    print("---------------------------------------------------------------------------------------")
+    print("------------------------------------------------------------------")
     print("Creating IPC-D-356 Netlist Files")
     print(f"Running: {cmd}")
 
@@ -109,7 +114,7 @@ def build_ipc_d356(ctx: KiCadProjectContext) -> None:
     shutil.move(generated_d356_file, final_output_file)
 
     print(f"Move done, moved to: {final_output_file}")
-    print("---------------------------------------------------------------------------------------")
+    print("------------------------------------------------------------------")
 
 
 

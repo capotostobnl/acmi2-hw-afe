@@ -1,6 +1,7 @@
 """
 build_schematic_package.py
-Schematic plotting script for plotting schematics from KiCAD. Tested on KiCAD Ver 9, Windows.
+Schematic plotting script for plotting schematics from KiCAD.
+Tested on KiCAD Ver 9, Windows.
 """
 
 import subprocess
@@ -23,7 +24,6 @@ def build_schematic(ctx: KiCadProjectContext) -> None:
 
     ctx.schematic_output_dir.mkdir(parents=True, exist_ok=True)
     output_path = ctx.schematic_output_dir / filename
-
 
     # ---- KiCad CLI export ----
     cmd = [

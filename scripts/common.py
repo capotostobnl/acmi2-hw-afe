@@ -1,22 +1,27 @@
-"""Common Files module for building release package documentation for NSLS-II KiCAD Projects"""
+"""Common Files module for building release package documentation
+for NSLS-II KiCAD Projects"""
+
 from dataclasses import dataclass
 from pathlib import Path
 import json
 
-# Set this to the path of the Kicad bin folder of the version of Kicad you wish to use.
+# Set this to the path of the Kicad bin folder of the version of Kicad
+# you wish to use.
 KICAD_BIN_PATH = Path(r"C:\Program Files\KiCad\9.0\bin")
 KICAD_CLI = KICAD_BIN_PATH / "kicad-cli.exe"
 
 
-#--------------------------------------------------------------------------------------------------
-# If you're not using default filenames, you'll have to specify them here; defaults are assuming
-# the root-level schematic sheet and the PCB filename match the project filename, e.g.
-# if the project is "EVR.kicad_pro", if you have "EVR.kicad_sch" and "EVR.kicad_pcb", none of the
+# ----------------------------------------------------------------------------
+# If you're not using default filenames, you'll have to specify them here;
+# defaults are assuming the root-level schematic sheet and the PCB filename
+# match the project filename, e.g. if the project is "EVR.kicad_pro", if
+# you have "EVR.kicad_sch" and "EVR.kicad_pcb", none of the
 # below need to be changed.
 #
-# Do the same for the drawing borders, setting the NSLS-II format names. If the names are unchanged,
-# They will resolve with the default settings. If they differ, change only the FALLBACK
-# filename below.
+# Do the same for the drawing borders, setting the NSLS-II format names.
+# If the names are unchanged, They will resolve with the default settings.
+#
+# If they differ, change only the FALLBACK filename below.
 
 SCHEMATIC_FILE_FALLBACK = None
 SCHEMATIC_TITLEBLOCK_FALLBACK = None
@@ -24,6 +29,7 @@ SCHEMATIC_TITLEBLOCK_FALLBACK = None
 PCB_FILE_FALLBACK = None
 FAB_TITLEBLOCK_FALLBACK = None
 ASSY_TITLEBLOCK_FALLBACK = None
+
 
 @dataclass(frozen=True)
 class KiCadVariables:
@@ -89,7 +95,6 @@ class KiCadProjectContext:
     fab_output_dir_temp: Path
     assy_output_dir: Path
     step_output_dir: Path
-
 
 
 def load_context() -> KiCadProjectContext:
@@ -186,6 +191,7 @@ def resolve_project_file(
         + f" in {project_root}"
     )
 
+
 def find_file_upward(pattern: str, start: Path | None = None) -> Path:
     """
     Searches upward from start, or from this script folder, until it finds
@@ -204,6 +210,7 @@ def find_file_upward(pattern: str, start: Path | None = None) -> Path:
     raise FileNotFoundError(
         f"No file matching '{pattern}' found in parent directories."
     )
+
 
 def find_kicad_project_file() -> Path:
     """Search the directory tree for the KiCad Project file"""

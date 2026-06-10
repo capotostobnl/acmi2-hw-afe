@@ -1,12 +1,14 @@
 """
 build_release_package.py
-Launcher script for building documentation packages from KiCAD. Tested on KiCAD Ver 9, Windows.
+Launcher script for building documentation packages from KiCAD.
+Tested on KiCAD Ver 9, Windows.
 """
 from common import load_context, KICAD_CLI
 from build_schematic_package import build_schematic
 from build_assembly_package import build_assembly
 from build_fabrication_package import build_fab
 from build_step_package import build_step_package
+
 
 def get_build_options():
     """Launch a menu to choose what CAM jobs to run"""
@@ -74,6 +76,7 @@ def main():
         build_fab(ctx)
     if step:
         build_step_package(ctx)
+
 
 if __name__ == "__main__":
     main()

@@ -5,9 +5,11 @@ Build STEP File from KiCAD. Tested on KiCAD Ver 9, Windows.
 import subprocess
 from common import load_context, KICAD_CLI, KiCadProjectContext
 
+
 def build_step_package(ctx: KiCadProjectContext):
     build_step_file(ctx)
     build_render(ctx)
+
 
 def build_step_file(ctx: KiCadProjectContext):
     """Generate STEP File of PCB"""
@@ -20,7 +22,6 @@ def build_step_file(ctx: KiCadProjectContext):
 
     ctx.step_output_dir.mkdir(parents=True, exist_ok=True)
     output_path = ctx.step_output_dir / filename
-
 
     # ---- KiCad CLI export ----
     cmd = [
@@ -48,6 +49,7 @@ def build_step_file(ctx: KiCadProjectContext):
 
     print("Generated schematic:", output_path)
 
+
 def build_render(ctx: KiCadProjectContext):
     """Generate PNG renders of PCB"""
     # ---- Extract naming variables ----
@@ -73,7 +75,6 @@ def build_render(ctx: KiCadProjectContext):
     front_output_path = ctx.step_output_dir / front_filename
     back_output_path = ctx.step_output_dir / back_filename
 
-
     # ---- KiCad CLI export ----
     print("--------------------------------------------------\nTop")
     cmd = [
@@ -88,6 +89,14 @@ def build_render(ctx: KiCadProjectContext):
         "--rotate='0,0,0'",
         "--side",
         "top",
+        "--zoom",
+        "1",
+        "--width",
+        "6400",
+        "--height",
+        "3600",
+        # "--preset",
+        # "follow_pcb_editor",
         str(ctx.pcb_file)
     ]
 
@@ -110,6 +119,14 @@ def build_render(ctx: KiCadProjectContext):
         "--rotate='0,0,0'",
         "--side",
         "bottom",
+        "--zoom",
+        "1",
+        "--width",
+        "6400",
+        "--height",
+        "3600",
+        # "--preset",
+        # "follow_pcb_editor",
         str(ctx.pcb_file)
     ]
 
@@ -121,18 +138,26 @@ def build_render(ctx: KiCadProjectContext):
 
     print("--------------------------------------------------\nIsometric")
     cmd = [
-            str(KICAD_CLI),
-            "pcb",
-            "render",
-            "--output",
-            str(isometric_output_path),
-            "--quality",
-            "high",
-            "--floor",
-            "--rotate='315,0,45'",
-            "--side",
-            "top",
-            str(ctx.pcb_file)
+        str(KICAD_CLI),
+        "pcb",
+        "render",
+        "--output",
+        str(isometric_output_path),
+        "--quality",
+        "high",
+        "--floor",
+        "--rotate='315,0,45'",
+        "--side",
+        "top",
+        "--zoom",
+        "1",
+        "--width",
+        "6400",
+        "--height",
+        "3600",
+        # "--preset",
+        # "follow_pcb_editor",
+        str(ctx.pcb_file)
         ]
 
     print("Running:", " ".join(cmd))
@@ -154,6 +179,14 @@ def build_render(ctx: KiCadProjectContext):
         "--rotate='0,0,0'",
         "--side",
         "left",
+        "--zoom",
+        "1",
+        "--width",
+        "6400",
+        "--height",
+        "3600",
+        # "--preset",
+        # "follow_pcb_editor",
         str(ctx.pcb_file)
     ]
 
@@ -176,6 +209,14 @@ def build_render(ctx: KiCadProjectContext):
         "--rotate='0,0,0'",
         "--side",
         "right",
+        "--zoom",
+        "1",
+        "--width",
+        "6400",
+        "--height",
+        "3600",
+        # "--preset",
+        # "follow_pcb_editor",
         str(ctx.pcb_file)
     ]
 
@@ -198,6 +239,14 @@ def build_render(ctx: KiCadProjectContext):
         "--rotate='0,0,0'",
         "--side",
         "front",
+        "--zoom",
+        "1",
+        "--width",
+        "6400",
+        "--height",
+        "3600",
+        # "--preset",
+        # "follow_pcb_editor",
         str(ctx.pcb_file)
     ]
 
@@ -220,6 +269,14 @@ def build_render(ctx: KiCadProjectContext):
         "--rotate='0,0,0'",
         "--side",
         "back",
+        "--zoom",
+        "1",
+        "--width",
+        "6400",
+        "--height",
+        "3600",
+        # "--preset",
+        # "follow_pcb_editor",
         str(ctx.pcb_file)
     ]
 
@@ -230,9 +287,7 @@ def build_render(ctx: KiCadProjectContext):
     print("Generated image:", back_output_path)
 
 
-
-
 if __name__ == "__main__":
     local_ctx = load_context()
     build_step_package(local_ctx)
-    #build_render(local_ctx)
+    # build_render(local_ctx)
