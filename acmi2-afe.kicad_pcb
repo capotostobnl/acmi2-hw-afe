@@ -424,6 +424,7 @@
 		(property "Value" "680"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "da67d14e-53ce-4bdd-bb87-f5af1b481e84")
 			(effects
 				(font
@@ -766,6 +767,7 @@
 		(property "Value" "10K"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "2e70fbd5-ef47-4929-9dcb-dbab1dca1aa3")
 			(effects
 				(font
@@ -1438,6 +1440,7 @@
 		(property "Value" "132134"
 			(at 0 5 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "3f8711d1-94e3-4aa7-8cac-bffd4df56f9d")
 			(effects
 				(font
@@ -1780,7 +1783,7 @@
 			(net 1 "GND")
 			(pinfunction "Ext")
 			(pintype "passive")
-			(uuid "d2d4d87a-3303-4b3f-bc36-2338a3b8592c")
+			(uuid "4c395d8b-e0aa-408b-b4ee-1c8bed2d02ef")
 		)
 		(pad "2" thru_hole circle
 			(at 2.54 -2.54 180)
@@ -1791,7 +1794,7 @@
 			(net 1 "GND")
 			(pinfunction "Ext")
 			(pintype "passive")
-			(uuid "d2d4d87a-3303-4b3f-bc36-2338a3b8592c")
+			(uuid "4ca61e35-59f0-4e31-90d7-1c230e8dde38")
 		)
 		(pad "2" thru_hole circle
 			(at 2.54 2.54 180)
@@ -1802,7 +1805,7 @@
 			(net 1 "GND")
 			(pinfunction "Ext")
 			(pintype "passive")
-			(uuid "d2d4d87a-3303-4b3f-bc36-2338a3b8592c")
+			(uuid "f5a13807-0b3c-4cda-9621-fe577e14cd1a")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Connector_Coaxial.3dshapes/SMA_Amphenol_132134_Vertical.step"
@@ -1837,6 +1840,7 @@
 		(property "Value" "1K"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "15286a23-afc4-4dda-9bce-f0597caf365e")
 			(effects
 				(font
@@ -2179,6 +2183,7 @@
 		(property "Value" "31.6"
 			(at 0 1.65 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "505ca566-f09a-4af0-99de-b726574a9ae6")
 			(effects
 				(font
@@ -2825,6 +2830,7 @@
 		(property "Value" "RED"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "80f60e77-8468-4400-9479-200e89d48bd7")
 			(effects
 				(font
@@ -3176,6 +3182,7 @@
 		(property "Value" "GND"
 			(at 0 2.25 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "3a7ee86e-0e1f-4303-92b7-7b4100b6a626")
 			(effects
 				(font
@@ -3461,6 +3468,7 @@
 		(property "Value" "205K"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "ef05b808-0061-4c3d-bf0b-feb8e1b1821a")
 			(effects
 				(font
@@ -4107,6 +4115,7 @@
 		(property "Value" "GND"
 			(at 0 2.25 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "b9e09add-249c-47f4-b5c1-39950ac94cba")
 			(effects
 				(font
@@ -4390,6 +4399,7 @@
 		(property "Value" "CAT25320VI-GT3"
 			(at 15.30402 4.67763 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "5be85741-b73f-4f1f-bccf-1b95afafbd6f")
 			(effects
 				(font
@@ -5113,6 +5123,7 @@
 		(property "Value" "680"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "0194b4ed-89fb-41b5-b928-70c055a77044")
 			(effects
 				(font
@@ -5456,6 +5467,7 @@
 		(property "Value" "MountingHole_Pad"
 			(at 0 4.7 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "ffafe789-c67c-446f-94c6-026821f8d151")
 			(effects
 				(font
@@ -5979,6 +5991,7 @@
 		(property "Value" "TPS7A8500RGRT"
 			(at 8.193 2.967 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "c0ad3414-95eb-4a9d-81ce-c54f1fed5fc9")
 			(effects
 				(font
@@ -6627,7 +6640,7 @@
 			(pintype "passive")
 			(solder_mask_margin 0.102)
 			(zone_connect 2)
-			(uuid "f3789c04-3b3e-47c6-8db3-1bf746bb2516")
+			(uuid "b74fd132-d19e-48f5-abcc-eb180fd887d4")
 		)
 		(pad "21" smd rect
 			(at 0 0)
@@ -6637,7 +6650,7 @@
 			(pinfunction "GND_TH")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "f3789c04-3b3e-47c6-8db3-1bf746bb2516")
+			(uuid "2bdf0fbf-1235-488d-b54c-72510f9bd3d2")
 		)
 		(pad "21" thru_hole circle
 			(at 0 0.5)
@@ -6651,7 +6664,7 @@
 			(pintype "passive")
 			(solder_mask_margin 0.102)
 			(zone_connect 2)
-			(uuid "f3789c04-3b3e-47c6-8db3-1bf746bb2516")
+			(uuid "7082b4ad-d9ac-4fa6-b5ae-644c0773ea58")
 		)
 		(pad "21" thru_hole circle
 			(at 0.5 0)
@@ -6665,7 +6678,7 @@
 			(pintype "passive")
 			(solder_mask_margin 0.102)
 			(zone_connect 2)
-			(uuid "f3789c04-3b3e-47c6-8db3-1bf746bb2516")
+			(uuid "de271350-3b53-4c4e-937d-4d1ba204b98a")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/3dmodels/TPS7A8500RGRT.STEP"
@@ -6700,6 +6713,7 @@
 		(property "Value" "RED"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "9dab328a-9425-4419-9a66-2dd637a3825c")
 			(effects
 				(font
@@ -7051,6 +7065,7 @@
 		(property "Value" "RED"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "41d85903-2a93-4a07-ba52-0bc6db24bca4")
 			(effects
 				(font
@@ -7400,6 +7415,7 @@
 		(property "Value" "TPS259540DSGR"
 			(at 6.2366 1.9564 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "dc2ae57b-8091-41d4-aee0-2f9c3ffd6689")
 			(effects
 				(font
@@ -8182,7 +8198,7 @@
 					(fill yes)
 				)
 			)
-			(uuid "ab568714-8de8-4899-abb3-568da52ff663")
+			(uuid "7d65e144-19be-4163-94bf-9a548dfa73e5")
 		)
 		(pad "9" thru_hole circle
 			(at 0 0.55 180)
@@ -8193,7 +8209,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "ab568714-8de8-4899-abb3-568da52ff663")
+			(uuid "b3556c39-0a99-4fa5-b451-df86fb4e99fc")
 		)
 		(embedded_fonts no)
 	)
@@ -8215,6 +8231,7 @@
 		(property "Value" "200MHz"
 			(at 4.958362 3.556004 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "63fe636e-63dd-466a-8c91-3f43d3645646")
 			(effects
 				(font
@@ -8619,6 +8636,7 @@
 		(property "Value" "GND"
 			(at 0 2.25 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "8260aab4-4c34-41f0-be64-55cf6ecb2ae0")
 			(effects
 				(font
@@ -8904,6 +8922,7 @@
 		(property "Value" "20"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "822b574d-74a9-4e44-ba7c-818fd5b61a54")
 			(effects
 				(font
@@ -9207,6 +9226,7 @@
 		(property "Value" "GREEN"
 			(at 0 1.65 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "b3864a86-280e-4f31-b476-a9c2d305d1bc")
 			(effects
 				(font
@@ -9558,6 +9578,7 @@
 		(property "Value" "680"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "2bc66593-8c14-4fb9-a625-0c727067e2de")
 			(effects
 				(font
@@ -9901,6 +9922,7 @@
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "77576575-a7ea-43b8-a758-012720956c65")
 			(effects
 				(font
@@ -10257,8 +10279,8 @@
 			(uuid "7ea635e2-5d56-4538-abf9-c0fa575cec53")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.0625)
 				)
 			)
 		)
@@ -10345,6 +10367,7 @@
 		(property "Value" "0"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "9824dd06-8f14-4c42-8550-e4d37c4a827f")
 			(effects
 				(font
@@ -10687,6 +10710,7 @@
 		(property "Value" "680"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "f73d72ac-e0be-432a-bd32-160a3c938f73")
 			(effects
 				(font
@@ -11029,6 +11053,7 @@
 		(property "Value" "RED"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "0b530963-5fab-4d32-8858-47576e91b1a8")
 			(effects
 				(font
@@ -11710,6 +11735,7 @@
 		(property "Value" "680"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "adc6dc7a-6d5b-4ef4-8f4c-8b40145a92df")
 			(effects
 				(font
@@ -12713,6 +12739,7 @@
 			(at -0.3 5.4 270)
 			(unlocked yes)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "ad7afaf5-e5f3-4586-bfb2-5df9789f03f6")
 			(effects
 				(font
@@ -13276,7 +13303,7 @@
 			(pinfunction "PGND")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "575fe9f9-b192-4abc-8aa6-f17bbf00b10e")
+			(uuid "fb9e287e-a691-41b8-b862-d50227aaf924")
 		)
 		(pad "23" smd rect
 			(at 0 0.299999 270)
@@ -13285,7 +13312,7 @@
 			(net 1 "GND")
 			(pinfunction "PGND")
 			(pintype "power_in")
-			(uuid "575fe9f9-b192-4abc-8aa6-f17bbf00b10e")
+			(uuid "36feab9b-ae78-4643-ba57-95172434b5ce")
 		)
 		(pad "23" thru_hole circle
 			(at 0 0.950001 270)
@@ -13297,7 +13324,7 @@
 			(pinfunction "PGND")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "575fe9f9-b192-4abc-8aa6-f17bbf00b10e")
+			(uuid "a6e9be53-e27e-4874-b948-9d7b3b3a1e32")
 		)
 		(pad "23" thru_hole circle
 			(at 0.549999 0.299999 270)
@@ -13309,7 +13336,7 @@
 			(pinfunction "PGND")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "575fe9f9-b192-4abc-8aa6-f17bbf00b10e")
+			(uuid "e1af0442-7797-495f-865e-9ef90aa11311")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/3dmodels/RDM0023A.stp"
@@ -13344,6 +13371,7 @@
 		(property "Value" "1K"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "b0994465-dbd5-462b-ba32-b85cd9ac8d0e")
 			(effects
 				(font
@@ -13686,6 +13714,7 @@
 		(property "Value" "680"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "29f0761e-9cd1-4ca9-bceb-b721a489bab0")
 			(effects
 				(font
@@ -14688,6 +14717,7 @@
 		(property "Value" "NX7002BKW"
 			(at 0 1.95 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "d86f7d3d-cfa8-4419-be26-c007762bf949")
 			(effects
 				(font
@@ -15083,6 +15113,7 @@
 		(property "Value" "faultn"
 			(at 0 -1.95 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "c7487152-590a-4a5b-a433-2b3bd77b57a6")
 			(effects
 				(font
@@ -15698,6 +15729,7 @@
 		(property "Value" "RED"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "f32c7d64-3b69-4c56-8683-c587fc512d62")
 			(effects
 				(font
@@ -16049,6 +16081,7 @@
 		(property "Value" "20"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "45e992eb-ee1f-4415-b6a4-ca96c207b584")
 			(effects
 				(font
@@ -16352,6 +16385,7 @@
 		(property "Value" "10K"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "a61c6184-fbab-4cf6-afff-461bf42dbefb")
 			(effects
 				(font
@@ -16694,6 +16728,7 @@
 		(property "Value" "RED"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "bc3c1a7a-ba84-4d43-8c43-6b1c0f872cec")
 			(effects
 				(font
@@ -17376,6 +17411,7 @@
 		(property "Value" "MountingHole_Pad"
 			(at 0 4.7 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "e4e6d93f-f9b8-41ce-a90d-9578cea4f491")
 			(effects
 				(font
@@ -17571,6 +17607,7 @@
 		(property "Value" "680"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "93b1cc59-a76d-4f39-b886-3c46dea3fea2")
 			(effects
 				(font
@@ -17913,6 +17950,7 @@
 		(property "Value" "680"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "df2e067b-6da2-43d4-a1d1-9ee9fe9a89d9")
 			(effects
 				(font
@@ -19245,6 +19283,7 @@
 		(property "Value" "680"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "ff123227-4889-4a33-9a22-995cb8816c24")
 			(effects
 				(font
@@ -19917,6 +19956,7 @@
 		(property "Value" "10K"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "ab59c602-3f0f-469d-87cd-360f3aeaa5a1")
 			(effects
 				(font
@@ -20259,6 +20299,7 @@
 		(property "Value" "RED"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "00e240ea-a6a7-4b86-9a5d-3e6774eca173")
 			(effects
 				(font
@@ -21391,6 +21432,7 @@
 		(property "Value" "MountingHole_Pad"
 			(at 0 4.7 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "ce358101-07fd-427e-928b-d9abd161ffa0")
 			(effects
 				(font
@@ -21587,6 +21629,7 @@
 		(property "Value" "MountingHole_Pad"
 			(at 0 4.7 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "d57260e8-139b-438e-9e7d-de8fca62c4a6")
 			(effects
 				(font
@@ -21783,6 +21826,7 @@
 		(property "Value" "MountingHole_Pad"
 			(at 0 4.7 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "54784c68-a558-4119-ad8c-d1c2c262f27e")
 			(effects
 				(font
@@ -22306,6 +22350,7 @@
 		(property "Value" "SN74LVC16T245DGGR"
 			(at 6.125 7.312 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "8607ee42-75a0-4d62-8f74-171ede1a2c23")
 			(effects
 				(font
@@ -23513,6 +23558,7 @@
 		(property "Value" "680"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "305950e3-dd22-4373-8ed9-99027b1d30ef")
 			(effects
 				(font
@@ -23855,6 +23901,7 @@
 		(property "Value" "10K"
 			(at 0 1.65 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "c774fd19-bcd1-42cf-b6a9-1243c37b0eef")
 			(effects
 				(font
@@ -24857,6 +24904,7 @@
 		(property "Value" "680"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "b4115323-acde-41cc-babe-7b56101899d8")
 			(effects
 				(font
@@ -25527,6 +25575,7 @@
 		(property "Value" "TPS3850H50DRCR"
 			(at 5.6116 2.4334 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "5f4f57ac-9362-4992-9807-fac9d0da3a6b")
 			(effects
 				(font
@@ -26216,7 +26265,7 @@
 			(pinfunction "GNDTH")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "db60ff7a-d271-4b7f-8821-a0d02bd79bab")
+			(uuid "a146cb80-f3fd-42c1-9919-527ce39ade9f")
 		)
 		(pad "11" smd custom
 			(at 0 0 180)
@@ -26241,7 +26290,7 @@
 					(fill yes)
 				)
 			)
-			(uuid "db60ff7a-d271-4b7f-8821-a0d02bd79bab")
+			(uuid "d0fa974d-d470-44ef-8f93-750357a665c1")
 		)
 		(pad "11" thru_hole circle
 			(at 0 0.95 180)
@@ -26253,7 +26302,7 @@
 			(pinfunction "GNDTH")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "db60ff7a-d271-4b7f-8821-a0d02bd79bab")
+			(uuid "5328155e-7a84-44b4-bde4-2bec2d4573ce")
 		)
 		(pad "11" thru_hole circle
 			(at 0.575 0 180)
@@ -26265,7 +26314,7 @@
 			(pinfunction "GNDTH")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "db60ff7a-d271-4b7f-8821-a0d02bd79bab")
+			(uuid "de822ad0-ca24-4d6c-b31c-f77916405a66")
 		)
 		(embedded_fonts no)
 	)
@@ -26619,6 +26668,7 @@
 		(property "Value" "10K"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "3057cbe6-6949-41e1-b097-82df3f1b6b57")
 			(effects
 				(font
@@ -26962,6 +27012,7 @@
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "2095456f-ba1d-4f8b-af0d-42fa46899eb9")
 			(effects
 				(font
@@ -30030,7 +30081,7 @@
 			(pinfunction "GND")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "8f8f2a69-5eb6-4d59-9991-c5a6d151cd64")
+			(uuid "d56d3f87-cfba-479f-bcba-2ec62bb87319")
 		)
 		(pad "49" thru_hole circle
 			(at -2 0.75 270)
@@ -30043,7 +30094,7 @@
 			(pinfunction "GND")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "8f8f2a69-5eb6-4d59-9991-c5a6d151cd64")
+			(uuid "0708b4bf-f541-47d3-bba6-3efa98de85b0")
 		)
 		(pad "49" thru_hole circle
 			(at -2 2 270)
@@ -30056,7 +30107,7 @@
 			(pinfunction "GND")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "8f8f2a69-5eb6-4d59-9991-c5a6d151cd64")
+			(uuid "bd5a9119-4aa4-40a9-b4ea-982e562ad0af")
 		)
 		(pad "49" thru_hole circle
 			(at -0.5 -1.75 270)
@@ -30069,7 +30120,7 @@
 			(pinfunction "GND")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "8f8f2a69-5eb6-4d59-9991-c5a6d151cd64")
+			(uuid "28d94e25-f896-4358-825e-8df8f4386dc2")
 		)
 		(pad "49" thru_hole circle
 			(at -0.5 -0.5 270)
@@ -30082,7 +30133,7 @@
 			(pinfunction "GND")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "8f8f2a69-5eb6-4d59-9991-c5a6d151cd64")
+			(uuid "84ab0869-9014-4fd0-be11-b2651e79b5fc")
 		)
 		(pad "49" thru_hole circle
 			(at -0.5 0.75 270)
@@ -30095,7 +30146,7 @@
 			(pinfunction "GND")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "8f8f2a69-5eb6-4d59-9991-c5a6d151cd64")
+			(uuid "f903f6b9-1ff7-4bbc-bfc1-9c03b0aacc90")
 		)
 		(pad "49" thru_hole circle
 			(at -0.5 2 270)
@@ -30108,7 +30159,7 @@
 			(pinfunction "GND")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "8f8f2a69-5eb6-4d59-9991-c5a6d151cd64")
+			(uuid "c6dc863c-93a1-4958-ae81-f6c36f2e9c31")
 		)
 		(pad "49" smd rect
 			(at 0 0 270)
@@ -30117,7 +30168,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "8f8f2a69-5eb6-4d59-9991-c5a6d151cd64")
+			(uuid "179da5c7-2f31-4216-915c-733064877cad")
 		)
 		(pad "49" thru_hole circle
 			(at 0.75 -1.75 270)
@@ -30130,7 +30181,7 @@
 			(pinfunction "GND")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "8f8f2a69-5eb6-4d59-9991-c5a6d151cd64")
+			(uuid "fe0780ab-273a-4af8-92d4-b53c319105e0")
 		)
 		(pad "49" thru_hole circle
 			(at 0.75 -0.5 270)
@@ -30143,7 +30194,7 @@
 			(pinfunction "GND")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "8f8f2a69-5eb6-4d59-9991-c5a6d151cd64")
+			(uuid "dd51604a-d5c1-4595-9463-88a914cb856b")
 		)
 		(pad "49" thru_hole circle
 			(at 0.75 0.75 270)
@@ -30156,7 +30207,7 @@
 			(pinfunction "GND")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "8f8f2a69-5eb6-4d59-9991-c5a6d151cd64")
+			(uuid "d871c365-1327-4954-90b1-02cc151af75d")
 		)
 		(pad "49" thru_hole circle
 			(at 0.75 2 270)
@@ -30169,7 +30220,7 @@
 			(pinfunction "GND")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "8f8f2a69-5eb6-4d59-9991-c5a6d151cd64")
+			(uuid "d2406c83-eb42-4139-80c8-c58efa04df66")
 		)
 		(pad "49" thru_hole circle
 			(at 2 -1.75 270)
@@ -30182,7 +30233,7 @@
 			(pinfunction "GND")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "8f8f2a69-5eb6-4d59-9991-c5a6d151cd64")
+			(uuid "8c1999c9-655c-457f-93e9-883015852026")
 		)
 		(pad "49" thru_hole circle
 			(at 2 -0.5 270)
@@ -30195,7 +30246,7 @@
 			(pinfunction "GND")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "8f8f2a69-5eb6-4d59-9991-c5a6d151cd64")
+			(uuid "b93d4223-b723-4708-aa2e-98b3f6127418")
 		)
 		(pad "49" thru_hole circle
 			(at 2 0.75 270)
@@ -30208,7 +30259,7 @@
 			(pinfunction "GND")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "8f8f2a69-5eb6-4d59-9991-c5a6d151cd64")
+			(uuid "c6a2cd07-8f9e-4ffe-813f-b96951b68220")
 		)
 		(pad "49" thru_hole circle
 			(at 2 2 270)
@@ -30221,7 +30272,7 @@
 			(pinfunction "GND")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "8f8f2a69-5eb6-4d59-9991-c5a6d151cd64")
+			(uuid "7802d1c9-65d6-464b-bbbc-2bfb02cdc1a0")
 		)
 		(embedded_fonts no)
 	)
@@ -30575,6 +30626,7 @@
 		(property "Value" "0"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "7f8819c5-0d84-47e4-b647-e2b9c634010a")
 			(effects
 				(font
@@ -31575,6 +31627,7 @@
 		(property "Value" "6469028-1"
 			(at -16.63 -9.385 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "fa9c5fdf-5c5f-4df3-8590-417ad0ad3b3e")
 			(effects
 				(font
@@ -33292,6 +33345,7 @@
 		(property "Value" "6469028-1"
 			(at -16.63 -9.385 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "99a9d059-441c-44ac-8891-fe20a1b52e15")
 			(effects
 				(font
@@ -35144,6 +35198,7 @@
 		(property "Value" "RED"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "ee6e3b31-6a8e-4b79-b9eb-905d01815b77")
 			(effects
 				(font
@@ -36275,6 +36330,7 @@
 		(property "Value" "680"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "0201e7a7-c251-4da8-8489-326938fd52cf")
 			(effects
 				(font
@@ -36615,6 +36671,7 @@
 		(property "Value" "TPS7A8500RGRT"
 			(at 8.193 2.967 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "74326706-f884-4d0a-9bac-2e9d051b1ab8")
 			(effects
 				(font
@@ -37263,7 +37320,7 @@
 			(pintype "passive")
 			(solder_mask_margin 0.102)
 			(zone_connect 2)
-			(uuid "f2b334be-ce9e-4c57-94e3-bdfd69435398")
+			(uuid "16052695-df88-4cbb-8b26-2f87c2c137de")
 		)
 		(pad "21" smd rect
 			(at 0 0)
@@ -37273,7 +37330,7 @@
 			(pinfunction "GND_TH")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "f2b334be-ce9e-4c57-94e3-bdfd69435398")
+			(uuid "8b8ae5f0-d12f-4765-8399-81c59c7939e7")
 		)
 		(pad "21" thru_hole circle
 			(at 0 0.5)
@@ -37287,7 +37344,7 @@
 			(pintype "passive")
 			(solder_mask_margin 0.102)
 			(zone_connect 2)
-			(uuid "f2b334be-ce9e-4c57-94e3-bdfd69435398")
+			(uuid "dc2b26a4-46ef-4ff3-8b13-8c8658a617e1")
 		)
 		(pad "21" thru_hole circle
 			(at 0.5 0)
@@ -37301,7 +37358,7 @@
 			(pintype "passive")
 			(solder_mask_margin 0.102)
 			(zone_connect 2)
-			(uuid "f2b334be-ce9e-4c57-94e3-bdfd69435398")
+			(uuid "5a2ae185-4984-4711-a795-399b8da3bceb")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/3dmodels/TPS7A8500RGRT.STEP"
@@ -37336,6 +37393,7 @@
 		(property "Value" "10K"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "99f1e64e-db84-43ad-bdd7-4c75e23b38e3")
 			(effects
 				(font
@@ -38338,6 +38396,7 @@
 		(property "Value" "680"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "b21f77af-5769-4a42-a91b-17dcccbd5a61")
 			(effects
 				(font
@@ -38680,6 +38739,7 @@
 		(property "Value" "RED"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "2455c739-d0b2-4000-a5c0-279e0e643bdb")
 			(effects
 				(font
@@ -39031,6 +39091,7 @@
 		(property "Value" "RED"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "4b6bd3ff-14ed-4400-99b9-55caf32f3765")
 			(effects
 				(font
@@ -39712,6 +39773,7 @@
 		(property "Value" "31.6"
 			(at 0 1.65 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "7bc16380-5bbb-4b16-9bbf-0c434d66808c")
 			(effects
 				(font
@@ -40029,6 +40091,7 @@
 		(property "Value" "MountingHole_Pad"
 			(at 0 4.7 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "b2304f6d-98a9-4df3-8b4d-a616eb479f26")
 			(effects
 				(font
@@ -40224,6 +40287,7 @@
 		(property "Value" "680"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "c777ee91-9679-41a2-ba7b-09f1ae51f974")
 			(effects
 				(font
@@ -40566,6 +40630,7 @@
 		(property "Value" "680"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "39aa0ee2-d021-4ec2-b6da-fa36b83c7fce")
 			(effects
 				(font
@@ -40908,6 +40973,7 @@
 		(property "Value" "RED"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "a6b49f24-ab31-443f-8dcd-667ba8e5a800")
 			(effects
 				(font
@@ -41257,6 +41323,7 @@
 		(property "Value" "T1-1T-KK81"
 			(at 6.1 10.775 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "97805d96-6d7e-4002-ab7d-bad38de16747")
 			(effects
 				(font
@@ -41830,6 +41897,7 @@
 		(property "Value" "RED"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "ac198e3f-bebd-448c-90dd-d0eea3ee8b38")
 			(effects
 				(font
@@ -42511,6 +42579,7 @@
 		(property "Value" "RED"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "005d05ac-abb8-40e4-9612-7da6e6c25828")
 			(effects
 				(font
@@ -42862,6 +42931,7 @@
 		(property "Value" "470"
 			(at 0 1.65 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "bb5e072a-a7e3-4e36-a85a-b24eb2ae8810")
 			(effects
 				(font
@@ -43176,6 +43246,7 @@
 		(property "Value" "6469028-1"
 			(at -16.63 -9.385 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "3b7a1867-6dfa-43ed-8ffb-18fc523e975b")
 			(effects
 				(font
@@ -44698,6 +44769,7 @@
 		(property "Value" "RED"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "7e8d8f0b-eabf-4a20-a2c2-e07be6ba1692")
 			(effects
 				(font
@@ -45049,6 +45121,7 @@
 		(property "Value" "200"
 			(at 0 1.65 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "d55473b9-8b8b-4816-809d-2523a43b0678")
 			(effects
 				(font
@@ -45696,6 +45769,7 @@
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "e6848892-e7ab-4e8e-a4ac-809519465e34")
 			(effects
 				(font
@@ -46052,8 +46126,8 @@
 			(uuid "7698f6be-7c7d-4cdd-8c80-02b2d07ed36b")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.0625)
 				)
 			)
 		)
@@ -46140,6 +46214,7 @@
 		(property "Value" "GND"
 			(at 0 2.25 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "32ecd210-e3ed-4787-91bf-614c1075af8b")
 			(effects
 				(font
@@ -46426,6 +46501,7 @@
 		(property "Value" "MountingHole_Pad"
 			(at 0 4.7 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "453a8f9d-f47e-4393-b0d9-c32761a8da3f")
 			(effects
 				(font
@@ -46621,6 +46697,7 @@
 		(property "Value" "680"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "9f1b5221-f605-49ca-a353-7b6e672ffbf6")
 			(effects
 				(font
@@ -47293,6 +47370,7 @@
 		(property "Value" "10K"
 			(at 0 1.65 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "4a20b0b1-edfc-4797-9a51-82f9e5c874a1")
 			(effects
 				(font
@@ -47965,6 +48043,7 @@
 		(property "Value" "10K"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "217deedd-7c94-4a58-ae7b-f4ddee97a2da")
 			(effects
 				(font
@@ -48307,6 +48386,7 @@
 		(property "Value" "RED"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "d78a0e0d-7eb9-473d-8475-d91d2d43dc6d")
 			(effects
 				(font
@@ -48658,6 +48738,7 @@
 		(property "Value" "1K"
 			(at 0 1.65 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "32ba6ba6-67dd-44c9-a71b-768646191716")
 			(effects
 				(font
@@ -49000,6 +49081,7 @@
 		(property "Value" "10"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "5fafb57a-452c-40c7-8f13-4c3244dbe460")
 			(effects
 				(font
@@ -49329,6 +49411,7 @@
 		(property "Value" "RED"
 			(at 0 1.65 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "8a160942-738a-4376-a186-8a990356c246")
 			(effects
 				(font
@@ -49681,6 +49764,7 @@
 		(property "Value" "MountingHole_Pad"
 			(at 0 4.7 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "6542f75f-7645-46e1-b279-d679eb6802fb")
 			(effects
 				(font
@@ -115844,8 +115928,7 @@
 		(effects
 			(font
 				(size 1.5 1.5)
-				(thickness 0.3)
-				(bold yes)
+				(thickness 0.1875)
 			)
 			(justify left bottom)
 		)
@@ -157224,7 +157307,7 @@
 		(polygon
 			(pts
 				(xy 283.1 318.3122) (xy 283.1 319.7) (xy 281.9 319.7) (xy 280.949999 320.650001) (xy 271.3 320.650001)
-				(xy 271.3 320.650001) (xy 271.3 318.3)
+				(xy 271.3 318.3)
 			)
 		)
 		(filled_polygon
@@ -173619,71 +173702,6 @@
 			"f1631b9d-271a-483e-b158-86c6b63d4c08" "f22eeadd-a0a2-4ce3-bf9f-7015b115429d"
 			"f9c87645-cf1c-439c-9a35-74ef20922f4d" "fa1ff6b3-d35f-452b-9068-0a849d9754ef"
 			"fb382d13-4ad3-4992-8a93-6a5a707f9367"
-		)
-	)
-	(group ""
-		(uuid "f6c3b9ee-ef7c-4189-be70-14ebb96145a6")
-		(members "00282bd3-96ab-45df-ab09-183cf5243de8" "00863f02-c6c0-4fcd-a02a-5e6fac6b4591"
-			"01888c1d-5c0a-41e8-a31d-a41f1b659e33" "0402069c-9017-4efb-aef5-ecfc9b251e39"
-			"06d540a9-94ed-43d2-ba20-fb62eb49a1e1" "085818d5-b574-4828-ba9e-327ece4d67ba"
-			"08aa5955-5b90-4d98-92d4-8fb9c0a0ee96" "0dc90814-57cc-4d15-b40e-5112926ce26e"
-			"1217c76d-c3d8-40f4-a96f-4a57bb7fac64" "1335ff20-4b1b-4c75-b6a7-3f7146e2c5cd"
-			"134587e8-23ff-4a6a-8870-6e6ab01e1122" "15578692-5146-4aa1-b3db-a02482138928"
-			"15bffa74-0315-4bfa-8dc5-b91c26c3600b" "1921b0dc-c619-4582-a1ba-30d6359cd271"
-			"19263c79-a90f-4a24-b70b-4909358b33a3" "19cbd932-4b67-4bd7-a17c-d5ef72eae68a"
-			"1a7e6a22-75ab-4f8d-8090-e574e5cd0eb2" "1bf89c45-332a-4e20-bb78-ebff3a6ac0e9"
-			"1db8b380-0f61-4156-b4be-ceaf00035efa" "21aea05c-17b3-4f66-a250-94e97d2a1c89"
-			"22343aa5-72f3-40be-be60-8e0ec528c110" "23194fd8-3989-467b-82ea-0374f5045c13"
-			"235d7875-300b-4576-91a8-554eed01fd7b" "291d8059-4130-44e6-b1db-fd9471b3a0b6"
-			"2cbb6107-3d58-43c8-916d-6edc42bb6179" "2f35fbfc-e292-4a81-be2b-c6e07a332060"
-			"3277bfd1-1963-4bb4-98ae-c6402be2b318" "338d8185-93ad-4b48-959a-91562d09d85f"
-			"3470648d-6a24-4aa4-9f4c-27600bc5dfe9" "34c5edf0-a2dd-45f3-b696-ac8e34b446f1"
-			"367e6bc3-f188-4f96-8c54-b038470e9f0f" "367f7ebf-1027-4576-81fb-84514bc6f969"
-			"3693c48a-37c4-448f-af9a-797ecd7ef635" "36b1341c-a5a5-4c51-b6de-74aa86a91a6b"
-			"3737afa2-36b3-4bf4-ad0b-f82a0acf3c1d" "37bdd62b-9f7f-4c17-a3f7-e89785882a88"
-			"37e3409f-e6af-4b89-9415-3b4ee1bc5bf5" "39c4a56d-6237-4c29-8e96-5bf6d60ebe6b"
-			"3bb4fd27-2dca-481b-8481-e018c7ae929e" "3c3acc34-7069-4989-ad9c-20eea0fb4413"
-			"3fe17553-f751-47c1-8b57-e7515a2756c7" "401e57f7-b64a-4c4c-9953-d99ed4b91104"
-			"431b0496-860b-4cf4-a61e-099847bf8ddd" "446949ba-6aba-4c7c-a5f8-4470eb268394"
-			"450102f9-98d7-4c01-bf8c-6d4b4b35feec" "4622655e-4bdd-4975-8e7f-fd52c2f582eb"
-			"47a09d92-c026-40a5-a0e6-e7735907a890" "49c47926-14a7-483e-8630-74cf920e9f62"
-			"4c4d2dbd-b581-4d65-9370-3413843094ad" "4d25c805-68f2-447e-9371-8004d06fbebe"
-			"52c6c405-1f15-4857-b217-4582a643074b" "5677142b-5d02-444b-8a55-9a606b86d60d"
-			"57f4e825-f42c-48c3-a006-c75e425bc681" "582af364-cac9-4e04-995f-4ef1a99695e1"
-			"5834d0e6-ce26-41b7-b738-3e3a29821a62" "5af5339c-61fb-4662-82f0-556bb88f2b21"
-			"5cc6787b-625d-4ec4-a224-f6f6e33c2b9a" "5d0e4661-4563-40a4-aff5-8f4a5cebb03b"
-			"5d45355c-0119-4b5c-9c6e-d11c7698cd5d" "5fee1cff-9e8d-4444-b829-fec0ff81f03a"
-			"6090c160-ed9c-4f84-8655-103f15b721e6" "63fa8b67-4016-489b-b563-419803e73eba"
-			"668796eb-0fae-4182-bb63-f1811f15add1" "6bd88b66-78dd-430f-ac45-b7fc528945f0"
-			"6c672225-d066-404d-af5d-5507963ee4fc" "6ee4dace-8c14-45d8-90de-dfe8d8fc6228"
-			"70d1946d-f456-41f7-b5de-35557907f58c" "74dfe18d-3261-4229-81fc-b0c906464e96"
-			"76c1b5e8-1dc1-4af2-adbf-091fc7fa6f25" "792d7a43-f35c-4ed6-b878-7560ec6405d0"
-			"7e9bcaa0-e9a0-4820-8e3d-883b32557ace" "7f8181c2-bdfe-4a61-a18f-6c653d143b23"
-			"806dd11b-fbbd-4bf9-b193-93a0eaff4fe9" "830357a1-6f43-466c-b18d-3870141f1088"
-			"83c3ecbb-b9f9-4c3b-aa25-39dae279f239" "87e69d1d-eaaf-497c-a7ff-579ab220f6ce"
-			"8b48176f-ace9-4747-b10b-141a68984dc6" "99fcc918-a67f-492b-a870-c619e6e9727b"
-			"9e02cd30-4651-42b8-8014-9e956350404c" "a3c01f5e-e755-4dcf-8f89-a689ec42dc35"
-			"a68d958d-bf55-4747-b8b5-fe9f11f5041c" "a69b5e66-9147-4950-b6d5-9090535a9526"
-			"a6cbc62f-ae69-4196-acf4-866bccb6512b" "a7468b77-0d69-4daf-b005-9922460f72c5"
-			"a8bc40fa-6055-4583-8ab1-4c7f86e81dc0" "aa2503b9-3f82-49f9-a24a-3d97ccdf4c04"
-			"ade13953-0dd8-483d-8500-dfdc1810333a" "ae35d90c-cdb3-472a-9117-fe644ff70711"
-			"b1e21284-3c09-4775-90d4-dae12d5507e7" "b9c4308f-302b-45e6-a6b3-07bcdf014217"
-			"bcd16782-4b66-4e08-a45c-b67023e66c7d" "bed9f7c6-2373-4e6e-91a5-0ec5f9a968b9"
-			"c3fb46cb-a161-44d7-a931-c99137d4aced" "c9f79406-3b1b-471d-9e69-3ebda65241bd"
-			"d08a3b1d-423a-46b9-9b46-ed78d10480d3" "d384f641-216a-43f2-8071-69f47cee879c"
-			"d49d3035-568c-43fb-8675-022dae7d2bba" "d96eae90-9b26-4aad-8e75-ad8ce16c0537"
-			"d9e08c68-adc2-4971-8617-7037775b31c0" "dcaf5f9b-4df4-4df8-9857-5ff1f2e49580"
-			"dd12ecfc-89c4-4f0e-a573-697ecd30fb82" "df167130-9d8e-43d1-8344-439294644d6c"
-			"e1ac31c4-d734-4685-ae56-789d8a7e7a4f" "e421295e-58dc-4555-8d19-5c5145096698"
-			"e4ad70a8-2cb7-466a-8bff-404b250ab96a" "e5b40913-973c-4627-9c68-7e65410f38cf"
-			"e8e309bc-67ee-4e62-ab19-8db7d95c92e5" "ea1ffbde-2ee2-437f-b963-558848d603fc"
-			"ea2a08a1-a808-4a10-80a4-a0df1d7c2920" "ece22bc0-64e1-4b9e-9a1d-6278a8940fc5"
-			"edf06bb8-dc18-482a-ae13-defaef429d5f" "ef06c954-9e29-4c2e-9007-1a6a9d0796a2"
-			"f08dc77a-2fd7-4c31-b146-57fb861ec3b3" "f18f8799-2182-4768-aa09-68c30471aaed"
-			"f2895093-34ae-4d7e-923e-ad2cbe487fcf" "f7f02204-0b5a-4cac-8eff-80865c832098"
-			"f859d0e3-38ed-492b-a21a-b1fad070fc51" "fade7ce1-4d31-4666-97a0-5203c5e042d3"
-			"fc33dcd7-1461-4fca-8e37-ea8034130e9d" "fd628bc7-19aa-40d8-9652-e7de3cf2ba92"
-			"fddd0e12-a046-4b93-a027-9bad1ea55eb6"
 		)
 	)
 	(group ""

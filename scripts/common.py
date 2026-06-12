@@ -31,8 +31,8 @@ SCHEMATIC_TITLEBLOCK_FALLBACK = None
 
 PCB_FILE_FALLBACK = None
 FAB_TITLEBLOCK_FALLBACK = None
-ASSY_TITLEBLOCK_FALLBACK = None
-
+ASSY_TITLEBLOCK_TOP_FALLBACK = None
+ASSY_TITLEBLOCK_BOT_FALLBACK = None
 
 @dataclass(frozen=True)
 class KiCadVariables:
@@ -90,13 +90,15 @@ class KiCadProjectContext:
     schematic_titleblock: Path
     pcb_file: Path
     fab_titleblock: Path
-    assy_titleblock: Path
+    assy_titleblock_top: Path
+    assy_titleblock_bot: Path
 
     output_root: Path
     schematic_output_dir: Path
     fab_output_dir: Path
     fab_output_dir_temp: Path
     assy_output_dir: Path
+    assy_output_dir_temp: Path
     step_output_dir: Path
 
 
@@ -132,10 +134,16 @@ def load_context() -> KiCadProjectContext:
         fallback_filename=FAB_TITLEBLOCK_FALLBACK,
     )
 
-    assy_titleblock = resolve_project_file(
+    assy_titleblock_top = resolve_project_file(
         project_root=project_root,
-        default_filename="KiCAD_NSLS_PLDF_ASSY_DRAWING.kicad_wks",
-        fallback_filename=ASSY_TITLEBLOCK_FALLBACK,
+        default_filename="KiCAD_NSLS_PLDF_ASSY_DRAWING_TOP.kicad_wks",
+        fallback_filename=ASSY_TITLEBLOCK_TOP_FALLBACK,
+    )
+
+    assy_titleblock_bot = resolve_project_file(
+        project_root=project_root,
+        default_filename="KiCAD_NSLS_PLDF_ASSY_DRAWING_BOT.kicad_wks",
+        fallback_filename=ASSY_TITLEBLOCK_BOT_FALLBACK,
     )
 
     output_root = project_root / "Outputs"
@@ -144,6 +152,7 @@ def load_context() -> KiCadProjectContext:
     fab_output_dir = output_root / "FAB"
     fab_output_dir_temp = fab_output_dir / "TEMP"
     assy_output_dir = output_root / "ASSY"
+    assy_output_dir_temp = assy_output_dir / "TEMP"
     step_output_dir = output_root / "STEP"
 
     return KiCadProjectContext(
@@ -155,13 +164,15 @@ def load_context() -> KiCadProjectContext:
         schematic_titleblock=schematic_titleblock,
         pcb_file=pcb_file,
         fab_titleblock=fab_titleblock,
-        assy_titleblock=assy_titleblock,
+        assy_titleblock_top=assy_titleblock_top,
+        assy_titleblock_bot=assy_titleblock_bot,
 
         output_root=output_root,
         schematic_output_dir=schematic_output_dir,
         fab_output_dir=fab_output_dir,
         fab_output_dir_temp=fab_output_dir_temp,
         assy_output_dir=assy_output_dir,
+        assy_output_dir_temp=assy_output_dir_temp,
         step_output_dir=step_output_dir,
     )
 
@@ -225,6 +236,10 @@ def cleanup_temp_dir(ctx: KiCadProjectContext) -> None:
     if ctx.fab_output_dir_temp.exists():
         shutil.rmtree(ctx.fab_output_dir_temp)
         print("Deleted temp folder:", ctx.fab_output_dir_temp)
+
+    if ctx.assy_output_dir_temp.exists():
+        shutil.rmtree(ctx.assy_output_dir_temp)
+        print("Deleted temp folder:", ctx.assy_output_dir_temp)
 
 
 def combine_pdfs(output_pdf: Path, input_pdfs: list[Path]) -> Path:
