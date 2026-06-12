@@ -4,14 +4,33 @@ Fab Drawing + Gerbers plotting script for plotting schematics from KiCAD.
 Tested on KiCAD Ver 9, Windows.
 """
 from pathlib import Path
-import atexit
 import subprocess
 import shutil
+from datetime import datetime
+from zipfile import ZipFile, ZIP_DEFLATED
+from pypdf import PdfWriter
 from common import load_context, KICAD_CLI, KiCadProjectContext
 
 
 def build_fab(ctx: KiCadProjectContext) -> None:
-    build_fab_gerbers(ctx)
+    """foo"""
+    build_drill(ctx)  # Excellon Drill File
+    build_ipc_d356(ctx)  # IPC D356 Netlist File
+    build_fab_gerbers(ctx)  # Build all gerbers
+    build_fab_pdf(ctx)  # Build Fab PDF binder
+    cleanup_temp_dir(ctx)  # Delete temp files
+
+
+    timestamp = datetime.now().strftime("%m-%d-%Y_%H-%M")
+    prefix = ctx.variables.drawing_number_prefix
+    suffix = ctx.variables.fab_suffix
+    rev_num = ctx.variables.revision_num
+
+    zip_filename_out = f"{prefix}-{suffix}_Rev-{rev_num}_{timestamp}.zip"
+    zip_source_dir = Path(ctx.fab_output_dir)
+    zip_out_path = Path(ctx.fab_output_dir / zip_filename_out)
+
+    zip_directory(zip_source_dir, zip_out_path)
 
 
 def cleanup_temp_dir(ctx: KiCadProjectContext) -> None:
@@ -118,12 +137,13 @@ def build_ipc_d356(ctx: KiCadProjectContext) -> None:
 
 
 def build_fab_gerbers(ctx: KiCadProjectContext) -> None:
-    """Build Fab Gerbers"""
-    build_drill_dwg_layer_gerbers(ctx)
+    """Build All Fab Gerbers"""
+    build_drill_dwg_layer_gerbers(ctx)  # Build Drill.Drawing Layer Gerbers (With Titleblock)
+    build_other_gerbers(ctx)  # Build non-Drill.Drawing Layer Gerbers (No Titleblock)
 
 
 def build_drill_dwg_layer_gerbers(ctx: KiCadProjectContext) -> None:
-    """Build Fab Gerbers"""
+    """Build Fab Gerbers Drill.Drawing layer, **NOT** the Excellon file!"""
     prefix = ctx.variables.drawing_number_prefix
     suffix = ctx.variables.fab_suffix
     revision_num = ctx.variables.revision_num
@@ -149,6 +169,7 @@ def build_drill_dwg_layer_gerbers(ctx: KiCadProjectContext) -> None:
         "--subtract-soldermask",
         "--common-layers",
         "Edge.Cuts",
+        "--no-protel-ext",
         str(ctx.pcb_file),
     ]
     print("------------------------------------------------------------------")
@@ -169,9 +190,239 @@ def build_drill_dwg_layer_gerbers(ctx: KiCadProjectContext) -> None:
     print("------------------------------------------------------------------")
 
 
+def build_other_gerbers(ctx: KiCadProjectContext) -> None:
+    """Build All non-assembly and non-Drill.Drawing Gerbers"""
+    prefix = ctx.variables.drawing_number_prefix
+    suffix = ctx.variables.fab_suffix
+    revision_num = ctx.variables.revision_num
+
+    filename = f"{prefix}-{suffix}_Rev-{revision_num}.gbr"
+    final_output_file = ctx.fab_output_dir / filename
+
+    output_path_temp = ctx.fab_output_dir_temp
+    ctx.fab_output_dir.mkdir(parents=True, exist_ok=True)
+
+    layers = [
+        "SST", "SMT",
+        "LY01", "LY02", "LY03", "LY04",
+        "LY05", "LY06", "LY07", "LY08",
+        "LY09", "LY10", "LY11", "LY12",
+        "LY13", "LY14", "LY15", "LY16",
+        "SMB", "SSB"
+    ]
+
+    layer_arg = ",".join(layers)
+
+    cmd = [
+        str(KICAD_CLI),
+        "pcb",
+        "export",
+        "gerbers",
+        "--output",
+        str(output_path_temp),
+        "--layers",
+        str(layer_arg),
+        "--subtract-soldermask",
+        "--common-layers",
+        "Edge.Cuts",
+        "--no-protel-ext",
+        str(ctx.pcb_file),
+    ]
+
+    print("------------------------------------------------------------------")
+    print("Creating Non-Fab layer and Non-Assembly Gerbers...")
+    print(f"Running: {cmd}")
+    subprocess.run(cmd, check=True)
+
+    print("Generated Gerber Output Directory:", str(output_path_temp))
+    print("Moving files....")
+
+    moved_count = 0
+    missing_files = []
+
+    for layer in layers:
+        generated_file = output_path_temp / f"{ctx.pcb_file.stem}-{layer}.gbr"
+
+        final_filename = f"{prefix}-{suffix}_Rev-{revision_num}_{layer}.gbr"
+        final_output_file = ctx.fab_output_dir / final_filename
+
+        if not generated_file.is_file():
+            missing_files.append(generated_file)
+            continue
+
+        if final_output_file.exists():
+            final_output_file.unlink()
+
+        shutil.move(generated_file, final_output_file)
+        moved_count += 1
+        print(f"Moved: {generated_file.name} -> {final_output_file.name}")
+
+    print(f"Moved {moved_count} Gerber file(s).")
+
+    if missing_files:
+        print("WARNING: Expected Gerber file was not generated...\n"
+                  "The script is configured assuming maximum 16 layers. "
+                  "\nIf layers do not exist, ignore the error.\n")
+        for missing_file in missing_files:
+            print(f"  - {missing_file}")
+
+    print("Move done.")
+
+    print("------------------------------------------------------------------")
+
+
+def build_fab_pdf(ctx: KiCadProjectContext) -> None:
+    """Build all the individual PDF pages...then combine them,
+    and move them to the fab outputs directory"""
+
+    drill_pdf = build_drill_dwg_layer_pdf(ctx)
+    other_pdf = build_other_pdf(ctx)
+
+    prefix = ctx.variables.drawing_number_prefix
+    suffix = ctx.variables.fab_suffix
+    revision_num = ctx.variables.revision_num
+
+    filename = f"{prefix}-{suffix}_Rev-{revision_num}.pdf"
+    final_output_file = ctx.fab_output_dir / filename
+
+    print("------------------------------------------------------------------")
+    print("Combining Fab PDF Files")
+    pdf_binder = combine_pdfs(
+        output_pdf = final_output_file,
+        input_pdfs=[
+            drill_pdf,
+            other_pdf,
+        ]
+    )
+    print("------------------------------------------------------------------")
+    _ = pdf_binder
+
+
+def build_drill_dwg_layer_pdf(ctx: KiCadProjectContext) -> Path:
+    """Build Fab Gerbers Drill.Drawing layer PDF, **NOT** the Excellon file!"""
+    output_path_temp = ctx.fab_output_dir_temp
+    generated_file = output_path_temp / f"{ctx.pcb_file.stem}-Drill_Drawing.pdf"
+    cmd = [
+        str(KICAD_CLI),
+        "pcb",
+        "export",
+        "pdf",
+        "--output",
+        str(generated_file),
+        "--layers",
+        "Drill.Drawing,Edge.Cuts",
+        "--drawing-sheet",
+        str(ctx.fab_titleblock),
+        "--include-border-title",
+        "--subtract-soldermask",
+        "--theme",
+        "NSLS-II",
+        "--mode-single",
+        str(ctx.pcb_file),
+    ]
+    print("------------------------------------------------------------------")
+    print("Creating Drill Drawing Files")
+    print(f"Running: {cmd}")
+    subprocess.run(cmd, check=True)
+    return generated_file
+
+
+def build_other_pdf(ctx: KiCadProjectContext) -> None:
+    """Build All non-assembly and non-Drill.Drawing PDF Sheets"""
+
+    output_path_temp = ctx.fab_output_dir_temp
+    generated_file = output_path_temp
+    ctx.fab_output_dir.mkdir(parents=True, exist_ok=True)
+
+
+    layers = [
+        "SST", "SMT", 
+        "LY01", "LY02", "LY03", "LY04",
+        "LY05", "LY06", "LY07", "LY08",
+        "LY09", "LY10", "LY11", "LY12",
+        "LY13", "LY14", "LY15", "LY16",
+        "SMB", "SSB",
+    ]
+
+    layer_arg = ",".join(layers)
+
+    cmd = [
+        str(KICAD_CLI),
+        "pcb",
+        "export",
+        "pdf",
+        "--output",
+        str(generated_file),
+        "--layers",
+        str(layer_arg),
+        "--subtract-soldermask",
+        "--black-and-white",
+        "--common-layers",
+        "Edge.Cuts",
+        "--mode-multipage",
+        str(ctx.pcb_file),
+    ]
+
+    print("------------------------------------------------------------------")
+    print("Creating Non-Fab layer and Non-Assembly PDF Plots...")
+    print(f"Running: {cmd}")
+    subprocess.run(cmd, check=True)
+    print("------------------------------------------------------------------")
+    return (generated_file / f"{ctx.pcb_file.stem}.pdf")
+
+
+def combine_pdfs(output_pdf: Path, input_pdfs: list[Path]) -> Path:
+    """Combine multiple PDFs into one PDF using pypdf."""
+    writer = PdfWriter()
+    added_count = 0
+
+    output_pdf.parent.mkdir(parents=True, exist_ok=True)
+
+    for input_pdf in input_pdfs:
+        if not input_pdf.is_file():
+            print(f"WARNING: PDF not found, skipping: {input_pdf}")
+            continue
+
+        print(f"Adding PDF: {input_pdf}")
+        writer.append(str(input_pdf))
+        added_count += 1
+
+    if added_count == 0:
+        raise FileNotFoundError(
+            f"No input PDFs were found. Output PDF was not created: {output_pdf}"
+        )
+
+    if output_pdf.exists():
+        output_pdf.unlink()
+
+    with output_pdf.open("wb") as f:
+        writer.write(f)
+
+    print(f"Combined {added_count} PDF file(s) into: {output_pdf}")
+    return output_pdf
+
+
+def zip_directory(source_dir: Path, zip_file: Path) -> None:
+    """Zip all the Fab files"""
+    source_dir = source_dir.resolve()
+
+    with ZipFile(zip_file, "w", compression=ZIP_DEFLATED) as zipf:
+        for file_path in source_dir.rglob("*"):
+            if not file_path.is_file():
+                continue
+
+            # Do not include zip files
+            if file_path.suffix.lower() == ".zip":
+                continue
+
+            # Also avoid including the output zip itself
+            if file_path.resolve() == zip_file:
+                continue
+
+            arcname = file_path.relative_to(source_dir)
+            zipf.write(file_path, arcname)
+
+
 if __name__ == "__main__":
     local_ctx = load_context()
-    # build_drill(local_ctx)
-    # build_ipc_d356(local_ctx)
-    # atexit.register(cleanup_temp_dir, local_ctx)
-    build_drill_dwg_layer_gerbers(local_ctx)
+    build_fab(local_ctx)
