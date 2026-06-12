@@ -7,6 +7,7 @@ from common import load_context, KICAD_CLI, KiCadProjectContext
 
 
 def build_step_package(ctx: KiCadProjectContext):
+    """Build the step file and render images"""
     build_step_file(ctx)
     build_render(ctx)
 

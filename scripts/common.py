@@ -3,7 +3,10 @@ for NSLS-II KiCAD Projects"""
 
 from dataclasses import dataclass
 from pathlib import Path
+import shutil
 import json
+from zipfile import ZipFile, ZIP_DEFLATED
+from pypdf import PdfWriter
 
 # Set this to the path of the Kicad bin folder of the version of Kicad
 # you wish to use.
@@ -215,3 +218,62 @@ def find_file_upward(pattern: str, start: Path | None = None) -> Path:
 def find_kicad_project_file() -> Path:
     """Search the directory tree for the KiCad Project file"""
     return find_file_upward("*.kicad_pro")
+
+
+def cleanup_temp_dir(ctx: KiCadProjectContext) -> None:
+    """Delete the TEMP Directory"""
+    if ctx.fab_output_dir_temp.exists():
+        shutil.rmtree(ctx.fab_output_dir_temp)
+        print("Deleted temp folder:", ctx.fab_output_dir_temp)
+
+
+def combine_pdfs(output_pdf: Path, input_pdfs: list[Path]) -> Path:
+    """Combine multiple PDFs into one PDF using pypdf."""
+    writer = PdfWriter()
+    added_count = 0
+
+    output_pdf.parent.mkdir(parents=True, exist_ok=True)
+
+    for input_pdf in input_pdfs:
+        if not input_pdf.is_file():
+            print(f"WARNING: PDF not found, skipping: {input_pdf}")
+            continue
+
+        print(f"Adding PDF: {input_pdf}")
+        writer.append(str(input_pdf))
+        added_count += 1
+
+    if added_count == 0:
+        raise FileNotFoundError(
+            f"No input PDFs were found. Output PDF was not created: {output_pdf}"
+        )
+
+    if output_pdf.exists():
+        output_pdf.unlink()
+
+    with output_pdf.open("wb") as f:
+        writer.write(f)
+
+    print(f"Combined {added_count} PDF file(s) into: {output_pdf}")
+    return output_pdf
+
+
+def zip_directory(source_dir: Path, zip_file: Path) -> None:
+    """Zip all the Fab files"""
+    source_dir = source_dir.resolve()
+
+    with ZipFile(zip_file, "w", compression=ZIP_DEFLATED) as zipf:
+        for file_path in source_dir.rglob("*"):
+            if not file_path.is_file():
+                continue
+
+            # Do not include zip files
+            if file_path.suffix.lower() == ".zip":
+                continue
+
+            # Also avoid including the output zip itself
+            if file_path.resolve() == zip_file:
+                continue
+
+            arcname = file_path.relative_to(source_dir)
+            zipf.write(file_path, arcname)

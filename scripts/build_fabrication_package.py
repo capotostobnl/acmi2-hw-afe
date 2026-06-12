@@ -7,9 +7,8 @@ from pathlib import Path
 import subprocess
 import shutil
 from datetime import datetime
-from zipfile import ZipFile, ZIP_DEFLATED
-from pypdf import PdfWriter
 from common import load_context, KICAD_CLI, KiCadProjectContext
+from common import cleanup_temp_dir, zip_directory, combine_pdfs
 
 
 def build_fab(ctx: KiCadProjectContext) -> None:
@@ -31,13 +30,6 @@ def build_fab(ctx: KiCadProjectContext) -> None:
     zip_out_path = Path(ctx.fab_output_dir / zip_filename_out)
 
     zip_directory(zip_source_dir, zip_out_path)
-
-
-def cleanup_temp_dir(ctx: KiCadProjectContext) -> None:
-    """Delete the TEMP Directory"""
-    if ctx.fab_output_dir_temp.exists():
-        shutil.rmtree(ctx.fab_output_dir_temp)
-        print("Deleted temp folder:", ctx.fab_output_dir_temp)
 
 
 def build_drill(ctx: KiCadProjectContext) -> None:
@@ -368,60 +360,7 @@ def build_other_pdf(ctx: KiCadProjectContext) -> None:
     print(f"Running: {cmd}")
     subprocess.run(cmd, check=True)
     print("------------------------------------------------------------------")
-    return (generated_file / f"{ctx.pcb_file.stem}.pdf")
-
-
-def combine_pdfs(output_pdf: Path, input_pdfs: list[Path]) -> Path:
-    """Combine multiple PDFs into one PDF using pypdf."""
-    writer = PdfWriter()
-    added_count = 0
-
-    output_pdf.parent.mkdir(parents=True, exist_ok=True)
-
-    for input_pdf in input_pdfs:
-        if not input_pdf.is_file():
-            print(f"WARNING: PDF not found, skipping: {input_pdf}")
-            continue
-
-        print(f"Adding PDF: {input_pdf}")
-        writer.append(str(input_pdf))
-        added_count += 1
-
-    if added_count == 0:
-        raise FileNotFoundError(
-            f"No input PDFs were found. Output PDF was not created: {output_pdf}"
-        )
-
-    if output_pdf.exists():
-        output_pdf.unlink()
-
-    with output_pdf.open("wb") as f:
-        writer.write(f)
-
-    print(f"Combined {added_count} PDF file(s) into: {output_pdf}")
-    return output_pdf
-
-
-def zip_directory(source_dir: Path, zip_file: Path) -> None:
-    """Zip all the Fab files"""
-    source_dir = source_dir.resolve()
-
-    with ZipFile(zip_file, "w", compression=ZIP_DEFLATED) as zipf:
-        for file_path in source_dir.rglob("*"):
-            if not file_path.is_file():
-                continue
-
-            # Do not include zip files
-            if file_path.suffix.lower() == ".zip":
-                continue
-
-            # Also avoid including the output zip itself
-            if file_path.resolve() == zip_file:
-                continue
-
-            arcname = file_path.relative_to(source_dir)
-            zipf.write(file_path, arcname)
-
+    return generated_file / f"{ctx.pcb_file.stem}.pdf"
 
 if __name__ == "__main__":
     local_ctx = load_context()

@@ -63,7 +63,28 @@
           "width": 0.15
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|218619000|312839000|96277d92-fdc1-43a5-a682-708c85d9ff4d|c3c0fe3c-22fe-44bf-8165-7066d7f851d0",
+          ""
+        ],
+        [
+          "footprint_type_mismatch|269949999|320650001|477eba00-427e-4751-a304-79aa65c1cdfe|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "footprint_type_mismatch|271400000|305700000|82c17bf6-7588-48ae-a548-939fbe89b230|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "footprint_type_mismatch|283700000|320250000|242c7a89-f47c-433e-9f70-0bbc8432b8dc|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "starved_thermal|270950000|322250000|173806a7-a2b4-4ff1-9208-75795ed9b5a3|59806215-b258-48ca-9e66-e6f045cca1e1|F.Cu",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -83,7 +104,7 @@
         "footprint": "error",
         "footprint_filters_mismatch": "ignore",
         "footprint_symbol_mismatch": "warning",
-        "footprint_type_mismatch": "ignore",
+        "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "error",
         "hole_to_hole": "error",
@@ -641,13 +662,13 @@
           "group_by": false,
           "label": "Qty",
           "name": "${QUANTITY}",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Cost",
           "name": "Cost",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -659,10 +680,10 @@
           "group_by": false,
           "label": "MFG_PN",
           "name": "MFG_PN",
-          "show": true
+          "show": false
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Value",
           "name": "Value",
           "show": true
@@ -683,7 +704,7 @@
           "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -719,13 +740,13 @@
           "group_by": false,
           "label": "Description",
           "name": "Description",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "MFG",
           "name": "MFG",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,

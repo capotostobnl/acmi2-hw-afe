@@ -153,6 +153,7 @@
 		(at -1.4 -1.6)
 		(size 0.3207 0.3207)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(zone_connect 2)
 		(options
 			(clearance outline)
 			(anchor rect)
@@ -205,6 +206,7 @@
 		(at -1.4 1.6)
 		(size 0.441401 0.441401)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(zone_connect 2)
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -251,6 +253,7 @@
 		(at 1.4 1.6)
 		(size 0.441401 0.441401)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(zone_connect 2)
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -303,6 +306,7 @@
 		(at 1.4 -1.6)
 		(size 0.3675 0.3675)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(zone_connect 2)
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)

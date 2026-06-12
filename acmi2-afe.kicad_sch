@@ -928,7 +928,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "${SHORT_NET_NAME(1)}"
+		(property "Value" "GND"
 			(at 318.77 204.9779 0)
 			(effects
 				(font
@@ -2080,7 +2080,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "${SHORT_NET_NAME(1)}"
+		(property "Value" "GND"
 			(at 332.74 204.9779 0)
 			(effects
 				(font
@@ -2237,7 +2237,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "${SHORT_NET_NAME(1)}"
+		(property "Value" "GND"
 			(at 361.95 204.9779 0)
 			(effects
 				(font
@@ -2865,7 +2865,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "${SHORT_NET_NAME(1)}"
+		(property "Value" "GND"
 			(at 346.71 204.9779 0)
 			(effects
 				(font

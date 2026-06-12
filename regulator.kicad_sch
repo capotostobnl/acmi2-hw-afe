@@ -5834,7 +5834,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "My Footprints:C_0805_2012Metric"
 			(at 49.53 133.35 0)
 			(effects
 				(font
@@ -6060,7 +6060,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "My Footprints:C_0805_2012Metric"
 			(at 133.35 48.26 0)
 			(effects
 				(font
@@ -6220,7 +6220,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "My Footprints:C_0805_2012Metric"
 			(at 123.19 48.26 0)
 			(effects
 				(font
@@ -6870,7 +6870,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "My Footprints:C_0805_2012Metric"
 			(at 55.88 60.96 0)
 			(effects
 				(font
@@ -7231,7 +7231,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "My Footprints:C_0805_2012Metric"
 			(at 179.07 133.35 0)
 			(effects
 				(font
@@ -8267,7 +8267,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "My Footprints:C_0805_2012Metric"
 			(at 229.87 48.26 0)
 			(effects
 				(font
@@ -8561,7 +8561,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "My Footprints:C_0805_2012Metric"
 			(at 254 134.62 0)
 			(effects
 				(font
@@ -8721,7 +8721,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "My Footprints:C_0805_2012Metric"
 			(at 219.71 48.26 0)
 			(effects
 				(font
@@ -9317,7 +9317,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "My Footprints:C_0805_2012Metric"
 			(at 40.64 133.35 0)
 			(effects
 				(font
@@ -10106,7 +10106,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "My Footprints:C_0805_2012Metric"
 			(at 113.03 48.26 0)
 			(effects
 				(font
@@ -10266,7 +10266,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "My Footprints:C_0805_2012Metric"
 			(at 233.68 146.05 0)
 			(effects
 				(font
@@ -10492,7 +10492,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "My Footprints:C_0805_2012Metric"
 			(at 133.35 134.62 0)
 			(effects
 				(font
@@ -10803,7 +10803,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "My Footprints:C_0805_2012Metric"
 			(at 102.87 146.05 0)
 			(effects
 				(font
@@ -11030,7 +11030,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "My Footprints:C_0805_2012Metric"
 			(at 123.19 134.62 0)
 			(effects
 				(font
@@ -11190,7 +11190,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "My Footprints:C_0805_2012Metric"
 			(at 21.59 133.35 0)
 			(effects
 				(font
@@ -11870,7 +11870,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "My Footprints:C_0805_2012Metric"
 			(at 151.13 133.35 0)
 			(effects
 				(font
@@ -12097,7 +12097,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "My Footprints:C_0805_2012Metric"
 			(at 43.18 156.21 0)
 			(effects
 				(font
@@ -12257,7 +12257,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "My Footprints:C_0805_2012Metric"
 			(at 243.84 134.62 0)
 			(effects
 				(font
@@ -12586,7 +12586,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "My Footprints:C_0805_2012Metric"
 			(at 170.18 133.35 0)
 			(effects
 				(font
@@ -12813,7 +12813,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "My Footprints:C_0805_2012Metric"
 			(at 264.16 134.62 0)
 			(effects
 				(font
@@ -13306,7 +13306,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "My Footprints:C_0805_2012Metric"
 			(at 113.03 134.62 0)
 			(effects
 				(font
@@ -14067,7 +14067,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "My Footprints:C_0805_2012Metric"
 			(at 240.03 48.26 0)
 			(effects
 				(font
@@ -14293,7 +14293,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "My Footprints:C_0805_2012Metric"
 			(at 173.99 156.21 0)
 			(effects
 				(font
